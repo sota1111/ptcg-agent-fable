@@ -1,0 +1,15 @@
+# --- License-restricted (competition-use-only, DO NOT COMMIT) ---
+# cabt engine bindings + libcg.so/.dll/.dylib
+/cg/
+# card CSVs / PDFs
+/data/
+*.zip
+submission.tar.gz
+
+# --- Local dev artifacts ---
+venv/
+__pycache__/
+*.pyc
+.env
+.DS_Store
+/eval/results/
