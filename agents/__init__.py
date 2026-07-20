@@ -8,16 +8,25 @@ Adapted from the proven ptcg-agent-matsu SOT-1671 baseline layers:
 - rng.py         : single externally-seeded RNG (no global random)
 - cards.py       : card-attribute feature index (unknown IDs -> defaults)
 
-The fable algorithm proper (SOT-1795) plugs in as further AGENT_TYPES.
+The fable algorithm proper (SOT-1795) adds:
+
+- evaluator.py   : heuristic leaf value (+ deck-preservation gradient)
+- rule_policy.py : 竹式 per-context rule policy / RuleAgent (fallback layer 3)
+- planner.py     : determinized anytime MCTS over the engine search API
+- mcts_agent.py  : MctsAgent — the planner under the agent contract
 """
 from .base import BaseAgent
 from .greedy_agent import GreedyAgent
+from .mcts_agent import MctsAgent
 from .random_agent import RandomAgent
 from .rng import Rng
+from .rule_policy import RuleAgent
 
 AGENT_TYPES = {
     "random": RandomAgent,
     "greedy": GreedyAgent,
+    "rule": RuleAgent,
+    "mcts": MctsAgent,
 }
 
 
