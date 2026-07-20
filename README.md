@@ -59,6 +59,22 @@ wait
 python3 eval/aggregate_shards.py /tmp/agg.json /tmp/s1.json /tmp/s2.json
 ```
 
+## Deck selection (SOT-1794)
+
+`deck.csv` is the measured pick from a 26-candidate field (25 Turin/NAIC 2026
+tournament decks + the shared matsu/take/ume champion deck): a full greedy
+round-robin screen (N=40/pair, mirrors + side alternation) followed by an
+independent-seed confirm of the top 4 (N=120/pair vs the full field), judged
+by aggregate Wilson 95% CI only. The champion deck won both stages
+CI-separated from the runner-up; 25,800 games, 0 faults. Details:
+`docs/deck_selection_report.md`.
+
+```bash
+python3 eval/deck_validator.py                      # deck.csv + decks/**/*.csv legality
+python3 eval/compare_decks.py --n-per-pair 40 \
+    --seed 1794001 --json eval/results/screen.json  # candidate round-robin
+```
+
 ## Agents (`agents/`)
 
 - `random_agent.py` — uniform random legal action (floor baseline).
@@ -76,8 +92,8 @@ python3 eval/aggregate_shards.py /tmp/agg.json /tmp/s1.json /tmp/s2.json
 
 `main.py` is the submission entry point (currently the official sample
 starting point hardened with the deck + a legal random policy — the fable
-algorithm lands in a later issue). `deck.csv` is a provisional legal
-60-card deck.
+algorithm lands in a later issue). `deck.csv` is the SOT-1794 measured
+selection (see above).
 
 ## Building a submission
 
