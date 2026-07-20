@@ -89,11 +89,34 @@ python3 eval/compare_decks.py --n-per-pair 40 \
 - `cards.py` — card-attribute feature index from the engine card master
   (no per-card ID/name special cases; unknown IDs -> neutral defaults).
 - `rng.py` — single externally-seeded RNG; no global `random` in agents.
+- `rule_policy.py` — 竹式 per-context rule policy (SOT-1682/1694): an
+  explicit COUNT_MODE entry for ALL 49 SelectContexts (no random-fallback
+  holes) plus the deck-reserve draw guard; `RuleAgent` is fallback layer 3.
+- `evaluator.py` — heuristic leaf value for search (prizes dominant) with an
+  optional deck-preservation gradient (`deck_low*` weights, SOT-1697).
+- `planner.py` — determinized anytime MCTS over the engine search API
+  (SOT-1672 lineage; `deviate_margin=0.1`), rule-table-driven in-tree counts.
+- `mcts_agent.py` — the planner under the agent contract (per-decision Rng
+  streams, budget-violation counting, greedy fallback).
 
-`main.py` is the submission entry point (currently the official sample
-starting point hardened with the deck + a legal random policy — the fable
-algorithm lands in a later issue). `deck.csv` is the SOT-1794 measured
-selection (see above).
+`main.py` is the fable submission entry point (SOT-1795): champion
+determinized MCTS (`FABLE_CONFIG`) + remaining-time budget governor +
+layered fallbacks MCTS → Greedy → Rule → random-legal. `deck.csv` is the
+SOT-1794 measured selection (see above). v1 measurements:
+`docs/fable_v1_report.md` (aggregates in `docs/fable_v1/`).
+
+## Cross-repo battle (vs a sibling submission)
+
+```bash
+python3 eval/battle_vs.py --opponent ../ptcg-agent-matsu --n 30 --json out.json
+python3 eval/battle_vs.py --aggregate shard1.json shard2.json   # pool shards
+```
+
+Each submission agent runs in its own subprocess (`eval/agent_server.py`,
+cwd=its repo) because the repos' top-level `agents` packages collide
+(SOT-1681); the host owns only this repo's engine and the orchestration.
+Faults (agent error / illegal action / dead server) are charged as losses
+and reported — the acceptance gate is 0.
 
 ## Building a submission
 
