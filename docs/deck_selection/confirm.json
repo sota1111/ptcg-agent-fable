@@ -1,0 +1,973 @@
+{
+  "decks_dir": "decks/candidates",
+  "candidates": [
+    "15_marnie_s_grimmsnarl_ex",
+    "16_crustle_mysterious_rock_inn",
+    "20_cynthia_s_garchomp_ex",
+    "26_stw_champion"
+  ],
+  "n_per_pair": 120,
+  "seed": 1794100,
+  "agent": "greedy",
+  "faults": {
+    "rejects": 0,
+    "exceptions": 0,
+    "fallbacks": 0
+  },
+  "ranking": [
+    {
+      "deck": "26_stw_champion",
+      "candidate": true,
+      "wins": 2541,
+      "losses": 571,
+      "draws": 8,
+      "unfinished": 0,
+      "n_decided": 3112,
+      "winrate_excl_draws": 0.8165167095115681,
+      "wilson95_excl_draws": [
+        0.8025299363641388,
+        0.829722999728633
+      ]
+    },
+    {
+      "deck": "16_crustle_mysterious_rock_inn",
+      "candidate": true,
+      "wins": 2378,
+      "losses": 732,
+      "draws": 10,
+      "unfinished": 0,
+      "n_decided": 3110,
+      "winrate_excl_draws": 0.7646302250803858,
+      "wilson95_excl_draws": [
+        0.7493993939101254,
+        0.7792080985198041
+      ]
+    },
+    {
+      "deck": "15_marnie_s_grimmsnarl_ex",
+      "candidate": true,
+      "wins": 2221,
+      "losses": 876,
+      "draws": 23,
+      "unfinished": 0,
+      "n_decided": 3097,
+      "winrate_excl_draws": 0.7171456247981918,
+      "wilson95_excl_draws": [
+        0.7010216898314203,
+        0.7327315209098184
+      ]
+    },
+    {
+      "deck": "20_cynthia_s_garchomp_ex",
+      "candidate": true,
+      "wins": 2030,
+      "losses": 1067,
+      "draws": 23,
+      "unfinished": 0,
+      "n_decided": 3097,
+      "winrate_excl_draws": 0.6554730384242816,
+      "wilson95_excl_draws": [
+        0.6385528067134256,
+        0.6720080423154318
+      ]
+    },
+    {
+      "deck": "14_mega_lucario_ex",
+      "candidate": false,
+      "wins": 228,
+      "losses": 252,
+      "draws": 0,
+      "unfinished": 0,
+      "n_decided": 480,
+      "winrate_excl_draws": 0.475,
+      "wilson95_excl_draws": [
+        0.43070103217927025,
+        0.5196959572486747
+      ]
+    },
+    {
+      "deck": "01_dragapult",
+      "candidate": false,
+      "wins": 160,
+      "losses": 318,
+      "draws": 2,
+      "unfinished": 0,
+      "n_decided": 478,
+      "winrate_excl_draws": 0.33472803347280333,
+      "wilson95_excl_draws": [
+        0.29388946793462845,
+        0.37820194135838403
+      ]
+    },
+    {
+      "deck": "03_dragapult_blaziken",
+      "candidate": false,
+      "wins": 157,
+      "losses": 320,
+      "draws": 3,
+      "unfinished": 0,
+      "n_decided": 477,
+      "winrate_excl_draws": 0.32914046121593293,
+      "wilson95_excl_draws": [
+        0.28848215728107646,
+        0.3725288700510014
+      ]
+    },
+    {
+      "deck": "02_raging_bolt_ogerpon",
+      "candidate": false,
+      "wins": 152,
+      "losses": 328,
+      "draws": 0,
+      "unfinished": 0,
+      "n_decided": 480,
+      "winrate_excl_draws": 0.31666666666666665,
+      "wilson95_excl_draws": [
+        0.27664699014754157,
+        0.35959759899072186
+      ]
+    },
+    {
+      "deck": "21_lillie_s_clefairy_ex_naic_champion",
+      "candidate": false,
+      "wins": 148,
+      "losses": 329,
+      "draws": 3,
+      "unfinished": 0,
+      "n_decided": 477,
+      "winrate_excl_draws": 0.31027253668763105,
+      "wilson95_excl_draws": [
+        0.2704115121959882,
+        0.35316515005619636
+      ]
+    },
+    {
+      "deck": "05_dragapult_dudunsparce",
+      "candidate": false,
+      "wins": 132,
+      "losses": 347,
+      "draws": 1,
+      "unfinished": 0,
+      "n_decided": 479,
+      "winrate_excl_draws": 0.2755741127348643,
+      "wilson95_excl_draws": [
+        0.23746590036857146,
+        0.3172534941492167
+      ]
+    },
+    {
+      "deck": "09_slowking",
+      "candidate": false,
+      "wins": 121,
+      "losses": 327,
+      "draws": 32,
+      "unfinished": 0,
+      "n_decided": 448,
+      "winrate_excl_draws": 0.2700892857142857,
+      "wilson95_excl_draws": [
+        0.23105702382759072,
+        0.3130309928579026
+      ]
+    },
+    {
+      "deck": "11_lillie_s_clefairy",
+      "candidate": false,
+      "wins": 128,
+      "losses": 352,
+      "draws": 0,
+      "unfinished": 0,
+      "n_decided": 480,
+      "winrate_excl_draws": 0.26666666666666666,
+      "wilson95_excl_draws": [
+        0.22907182585840422,
+        0.30796674213574926
+      ]
+    },
+    {
+      "deck": "06_hydrapple",
+      "candidate": false,
+      "wins": 125,
+      "losses": 354,
+      "draws": 1,
+      "unfinished": 0,
+      "n_decided": 479,
+      "winrate_excl_draws": 0.2609603340292276,
+      "wilson95_excl_draws": [
+        0.22364412772310135,
+        0.30208025062375204
+      ]
+    },
+    {
+      "deck": "23_slowking_naic_4th",
+      "candidate": false,
+      "wins": 117,
+      "losses": 350,
+      "draws": 13,
+      "unfinished": 0,
+      "n_decided": 467,
+      "winrate_excl_draws": 0.2505353319057816,
+      "wilson95_excl_draws": [
+        0.21337711713082247,
+        0.2917643147222679
+      ]
+    },
+    {
+      "deck": "25_mega_lopunny_ex",
+      "candidate": false,
+      "wins": 114,
+      "losses": 366,
+      "draws": 0,
+      "unfinished": 0,
+      "n_decided": 480,
+      "winrate_excl_draws": 0.2375,
+      "wilson95_excl_draws": [
+        0.2016080183985512,
+        0.2775603705948714
+      ]
+    },
+    {
+      "deck": "08_ogerpon_box",
+      "candidate": false,
+      "wins": 110,
+      "losses": 370,
+      "draws": 0,
+      "unfinished": 0,
+      "n_decided": 480,
+      "winrate_excl_draws": 0.22916666666666666,
+      "wilson95_excl_draws": [
+        0.19380459905054254,
+        0.26882945308552836
+      ]
+    },
+    {
+      "deck": "19_ethan_s_typhlosion",
+      "candidate": false,
+      "wins": 108,
+      "losses": 372,
+      "draws": 0,
+      "unfinished": 0,
+      "n_decided": 480,
+      "winrate_excl_draws": 0.225,
+      "wilson95_excl_draws": [
+        0.18991055561870482,
+        0.26445632808869035
+      ]
+    },
+    {
+      "deck": "10_hop_s_trevenant",
+      "candidate": false,
+      "wins": 102,
+      "losses": 377,
+      "draws": 1,
+      "unfinished": 0,
+      "n_decided": 479,
+      "winrate_excl_draws": 0.21294363256784968,
+      "wilson95_excl_draws": [
+        0.17863968171680153,
+        0.2518153577826948
+      ]
+    },
+    {
+      "deck": "04_dragapult_dusknoir",
+      "candidate": false,
+      "wins": 100,
+      "losses": 378,
+      "draws": 2,
+      "unfinished": 0,
+      "n_decided": 478,
+      "winrate_excl_draws": 0.20920502092050208,
+      "wilson95_excl_draws": [
+        0.17513152889668943,
+        0.2479153811251933
+      ]
+    },
+    {
+      "deck": "22_dragapult_ex_naic_2nd",
+      "candidate": false,
+      "wins": 99,
+      "losses": 378,
+      "draws": 3,
+      "unfinished": 0,
+      "n_decided": 477,
+      "winrate_excl_draws": 0.20754716981132076,
+      "wilson95_excl_draws": [
+        0.17355910174991837,
+        0.24620823951173618
+      ]
+    },
+    {
+      "deck": "17_rocket_s_mewtwo_ex",
+      "candidate": false,
+      "wins": 89,
+      "losses": 391,
+      "draws": 0,
+      "unfinished": 0,
+      "n_decided": 480,
+      "winrate_excl_draws": 0.18541666666666667,
+      "wilson95_excl_draws": [
+        0.15319490064957958,
+        0.22263388298539516
+      ]
+    },
+    {
+      "deck": "13_festival_lead",
+      "candidate": false,
+      "wins": 31,
+      "losses": 447,
+      "draws": 2,
+      "unfinished": 0,
+      "n_decided": 478,
+      "winrate_excl_draws": 0.06485355648535565,
+      "wilson95_excl_draws": [
+        0.04606160723347817,
+        0.09058412862660532
+      ]
+    },
+    {
+      "deck": "12_alakazam_dudunsparce",
+      "candidate": false,
+      "wins": 24,
+      "losses": 456,
+      "draws": 0,
+      "unfinished": 0,
+      "n_decided": 480,
+      "winrate_excl_draws": 0.05,
+      "wilson95_excl_draws": [
+        0.0338268772604763,
+        0.07331893244253394
+      ]
+    },
+    {
+      "deck": "07_n_s_zoroark_n",
+      "candidate": false,
+      "wins": 15,
+      "losses": 465,
+      "draws": 0,
+      "unfinished": 0,
+      "n_decided": 480,
+      "winrate_excl_draws": 0.03125,
+      "wilson95_excl_draws": [
+        0.019027613680897237,
+        0.050915938093071766
+      ]
+    },
+    {
+      "deck": "24_n_s_zoroark_ex_naic_10th",
+      "candidate": false,
+      "wins": 11,
+      "losses": 469,
+      "draws": 0,
+      "unfinished": 0,
+      "n_decided": 480,
+      "winrate_excl_draws": 0.022916666666666665,
+      "wilson95_excl_draws": [
+        0.012843430891358075,
+        0.04056578402525926
+      ]
+    },
+    {
+      "deck": "18_rocket_s_honchkrow",
+      "candidate": false,
+      "wins": 10,
+      "losses": 470,
+      "draws": 0,
+      "unfinished": 0,
+      "n_decided": 480,
+      "winrate_excl_draws": 0.020833333333333332,
+      "wilson95_excl_draws": [
+        0.011354733770297006,
+        0.03792089693198242
+      ]
+    }
+  ],
+  "per_pair": {
+    "01_dragapult vs 15_marnie_s_grimmsnarl_ex": {
+      "wins_a": 50,
+      "wins_b": 69,
+      "draws": 1,
+      "unfinished": 0
+    },
+    "01_dragapult vs 16_crustle_mysterious_rock_inn": {
+      "wins_a": 36,
+      "wins_b": 83,
+      "draws": 1,
+      "unfinished": 0
+    },
+    "01_dragapult vs 20_cynthia_s_garchomp_ex": {
+      "wins_a": 54,
+      "wins_b": 66,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "01_dragapult vs 26_stw_champion": {
+      "wins_a": 20,
+      "wins_b": 100,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "02_raging_bolt_ogerpon vs 15_marnie_s_grimmsnarl_ex": {
+      "wins_a": 48,
+      "wins_b": 72,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "02_raging_bolt_ogerpon vs 16_crustle_mysterious_rock_inn": {
+      "wins_a": 27,
+      "wins_b": 93,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "02_raging_bolt_ogerpon vs 20_cynthia_s_garchomp_ex": {
+      "wins_a": 46,
+      "wins_b": 74,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "02_raging_bolt_ogerpon vs 26_stw_champion": {
+      "wins_a": 31,
+      "wins_b": 89,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "03_dragapult_blaziken vs 15_marnie_s_grimmsnarl_ex": {
+      "wins_a": 42,
+      "wins_b": 75,
+      "draws": 3,
+      "unfinished": 0
+    },
+    "03_dragapult_blaziken vs 16_crustle_mysterious_rock_inn": {
+      "wins_a": 34,
+      "wins_b": 86,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "03_dragapult_blaziken vs 20_cynthia_s_garchomp_ex": {
+      "wins_a": 62,
+      "wins_b": 58,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "03_dragapult_blaziken vs 26_stw_champion": {
+      "wins_a": 19,
+      "wins_b": 101,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "04_dragapult_dusknoir vs 15_marnie_s_grimmsnarl_ex": {
+      "wins_a": 25,
+      "wins_b": 94,
+      "draws": 1,
+      "unfinished": 0
+    },
+    "04_dragapult_dusknoir vs 16_crustle_mysterious_rock_inn": {
+      "wins_a": 19,
+      "wins_b": 101,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "04_dragapult_dusknoir vs 20_cynthia_s_garchomp_ex": {
+      "wins_a": 41,
+      "wins_b": 79,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "04_dragapult_dusknoir vs 26_stw_champion": {
+      "wins_a": 15,
+      "wins_b": 104,
+      "draws": 1,
+      "unfinished": 0
+    },
+    "05_dragapult_dudunsparce vs 15_marnie_s_grimmsnarl_ex": {
+      "wins_a": 27,
+      "wins_b": 92,
+      "draws": 1,
+      "unfinished": 0
+    },
+    "05_dragapult_dudunsparce vs 16_crustle_mysterious_rock_inn": {
+      "wins_a": 26,
+      "wins_b": 94,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "05_dragapult_dudunsparce vs 20_cynthia_s_garchomp_ex": {
+      "wins_a": 54,
+      "wins_b": 66,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "05_dragapult_dudunsparce vs 26_stw_champion": {
+      "wins_a": 25,
+      "wins_b": 95,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "06_hydrapple vs 15_marnie_s_grimmsnarl_ex": {
+      "wins_a": 37,
+      "wins_b": 83,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "06_hydrapple vs 16_crustle_mysterious_rock_inn": {
+      "wins_a": 23,
+      "wins_b": 96,
+      "draws": 1,
+      "unfinished": 0
+    },
+    "06_hydrapple vs 20_cynthia_s_garchomp_ex": {
+      "wins_a": 45,
+      "wins_b": 75,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "06_hydrapple vs 26_stw_champion": {
+      "wins_a": 20,
+      "wins_b": 100,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "07_n_s_zoroark_n vs 15_marnie_s_grimmsnarl_ex": {
+      "wins_a": 7,
+      "wins_b": 113,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "07_n_s_zoroark_n vs 16_crustle_mysterious_rock_inn": {
+      "wins_a": 5,
+      "wins_b": 115,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "07_n_s_zoroark_n vs 20_cynthia_s_garchomp_ex": {
+      "wins_a": 1,
+      "wins_b": 119,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "07_n_s_zoroark_n vs 26_stw_champion": {
+      "wins_a": 2,
+      "wins_b": 118,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "08_ogerpon_box vs 15_marnie_s_grimmsnarl_ex": {
+      "wins_a": 30,
+      "wins_b": 90,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "08_ogerpon_box vs 16_crustle_mysterious_rock_inn": {
+      "wins_a": 37,
+      "wins_b": 83,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "08_ogerpon_box vs 20_cynthia_s_garchomp_ex": {
+      "wins_a": 26,
+      "wins_b": 94,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "08_ogerpon_box vs 26_stw_champion": {
+      "wins_a": 17,
+      "wins_b": 103,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "09_slowking vs 15_marnie_s_grimmsnarl_ex": {
+      "wins_a": 28,
+      "wins_b": 87,
+      "draws": 5,
+      "unfinished": 0
+    },
+    "09_slowking vs 16_crustle_mysterious_rock_inn": {
+      "wins_a": 8,
+      "wins_b": 107,
+      "draws": 5,
+      "unfinished": 0
+    },
+    "09_slowking vs 20_cynthia_s_garchomp_ex": {
+      "wins_a": 51,
+      "wins_b": 53,
+      "draws": 16,
+      "unfinished": 0
+    },
+    "09_slowking vs 26_stw_champion": {
+      "wins_a": 34,
+      "wins_b": 80,
+      "draws": 6,
+      "unfinished": 0
+    },
+    "10_hop_s_trevenant vs 15_marnie_s_grimmsnarl_ex": {
+      "wins_a": 20,
+      "wins_b": 99,
+      "draws": 1,
+      "unfinished": 0
+    },
+    "10_hop_s_trevenant vs 16_crustle_mysterious_rock_inn": {
+      "wins_a": 33,
+      "wins_b": 87,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "10_hop_s_trevenant vs 20_cynthia_s_garchomp_ex": {
+      "wins_a": 26,
+      "wins_b": 94,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "10_hop_s_trevenant vs 26_stw_champion": {
+      "wins_a": 23,
+      "wins_b": 97,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "11_lillie_s_clefairy vs 15_marnie_s_grimmsnarl_ex": {
+      "wins_a": 34,
+      "wins_b": 86,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "11_lillie_s_clefairy vs 16_crustle_mysterious_rock_inn": {
+      "wins_a": 41,
+      "wins_b": 79,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "11_lillie_s_clefairy vs 20_cynthia_s_garchomp_ex": {
+      "wins_a": 35,
+      "wins_b": 85,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "11_lillie_s_clefairy vs 26_stw_champion": {
+      "wins_a": 18,
+      "wins_b": 102,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "12_alakazam_dudunsparce vs 15_marnie_s_grimmsnarl_ex": {
+      "wins_a": 1,
+      "wins_b": 119,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "12_alakazam_dudunsparce vs 16_crustle_mysterious_rock_inn": {
+      "wins_a": 8,
+      "wins_b": 112,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "12_alakazam_dudunsparce vs 20_cynthia_s_garchomp_ex": {
+      "wins_a": 11,
+      "wins_b": 109,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "12_alakazam_dudunsparce vs 26_stw_champion": {
+      "wins_a": 4,
+      "wins_b": 116,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "13_festival_lead vs 15_marnie_s_grimmsnarl_ex": {
+      "wins_a": 7,
+      "wins_b": 111,
+      "draws": 2,
+      "unfinished": 0
+    },
+    "13_festival_lead vs 16_crustle_mysterious_rock_inn": {
+      "wins_a": 5,
+      "wins_b": 115,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "13_festival_lead vs 20_cynthia_s_garchomp_ex": {
+      "wins_a": 14,
+      "wins_b": 106,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "13_festival_lead vs 26_stw_champion": {
+      "wins_a": 5,
+      "wins_b": 115,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "14_mega_lucario_ex vs 15_marnie_s_grimmsnarl_ex": {
+      "wins_a": 59,
+      "wins_b": 61,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "14_mega_lucario_ex vs 16_crustle_mysterious_rock_inn": {
+      "wins_a": 68,
+      "wins_b": 52,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "14_mega_lucario_ex vs 20_cynthia_s_garchomp_ex": {
+      "wins_a": 62,
+      "wins_b": 58,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "14_mega_lucario_ex vs 26_stw_champion": {
+      "wins_a": 39,
+      "wins_b": 81,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "15_marnie_s_grimmsnarl_ex vs 15_marnie_s_grimmsnarl_ex": {
+      "wins_a": 62,
+      "wins_b": 57,
+      "draws": 1,
+      "unfinished": 0
+    },
+    "15_marnie_s_grimmsnarl_ex vs 16_crustle_mysterious_rock_inn": {
+      "wins_a": 31,
+      "wins_b": 89,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "15_marnie_s_grimmsnarl_ex vs 17_rocket_s_mewtwo_ex": {
+      "wins_a": 109,
+      "wins_b": 11,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "15_marnie_s_grimmsnarl_ex vs 18_rocket_s_honchkrow": {
+      "wins_a": 117,
+      "wins_b": 3,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "15_marnie_s_grimmsnarl_ex vs 19_ethan_s_typhlosion": {
+      "wins_a": 92,
+      "wins_b": 28,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "15_marnie_s_grimmsnarl_ex vs 20_cynthia_s_garchomp_ex": {
+      "wins_a": 65,
+      "wins_b": 55,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "15_marnie_s_grimmsnarl_ex vs 21_lillie_s_clefairy_ex_naic_champion": {
+      "wins_a": 81,
+      "wins_b": 37,
+      "draws": 2,
+      "unfinished": 0
+    },
+    "15_marnie_s_grimmsnarl_ex vs 22_dragapult_ex_naic_2nd": {
+      "wins_a": 93,
+      "wins_b": 24,
+      "draws": 3,
+      "unfinished": 0
+    },
+    "15_marnie_s_grimmsnarl_ex vs 23_slowking_naic_4th": {
+      "wins_a": 91,
+      "wins_b": 26,
+      "draws": 3,
+      "unfinished": 0
+    },
+    "15_marnie_s_grimmsnarl_ex vs 24_n_s_zoroark_ex_naic_10th": {
+      "wins_a": 119,
+      "wins_b": 1,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "15_marnie_s_grimmsnarl_ex vs 25_mega_lopunny_ex": {
+      "wins_a": 85,
+      "wins_b": 35,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "15_marnie_s_grimmsnarl_ex vs 26_stw_champion": {
+      "wins_a": 25,
+      "wins_b": 95,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "16_crustle_mysterious_rock_inn vs 16_crustle_mysterious_rock_inn": {
+      "wins_a": 52,
+      "wins_b": 68,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "16_crustle_mysterious_rock_inn vs 17_rocket_s_mewtwo_ex": {
+      "wins_a": 97,
+      "wins_b": 23,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "16_crustle_mysterious_rock_inn vs 18_rocket_s_honchkrow": {
+      "wins_a": 116,
+      "wins_b": 4,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "16_crustle_mysterious_rock_inn vs 19_ethan_s_typhlosion": {
+      "wins_a": 92,
+      "wins_b": 28,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "16_crustle_mysterious_rock_inn vs 20_cynthia_s_garchomp_ex": {
+      "wins_a": 65,
+      "wins_b": 55,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "16_crustle_mysterious_rock_inn vs 21_lillie_s_clefairy_ex_naic_champion": {
+      "wins_a": 84,
+      "wins_b": 35,
+      "draws": 1,
+      "unfinished": 0
+    },
+    "16_crustle_mysterious_rock_inn vs 22_dragapult_ex_naic_2nd": {
+      "wins_a": 105,
+      "wins_b": 15,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "16_crustle_mysterious_rock_inn vs 23_slowking_naic_4th": {
+      "wins_a": 114,
+      "wins_b": 4,
+      "draws": 2,
+      "unfinished": 0
+    },
+    "16_crustle_mysterious_rock_inn vs 24_n_s_zoroark_ex_naic_10th": {
+      "wins_a": 116,
+      "wins_b": 4,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "16_crustle_mysterious_rock_inn vs 25_mega_lopunny_ex": {
+      "wins_a": 80,
+      "wins_b": 40,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "16_crustle_mysterious_rock_inn vs 26_stw_champion": {
+      "wins_a": 65,
+      "wins_b": 55,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "17_rocket_s_mewtwo_ex vs 20_cynthia_s_garchomp_ex": {
+      "wins_a": 37,
+      "wins_b": 83,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "17_rocket_s_mewtwo_ex vs 26_stw_champion": {
+      "wins_a": 18,
+      "wins_b": 102,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "18_rocket_s_honchkrow vs 20_cynthia_s_garchomp_ex": {
+      "wins_a": 0,
+      "wins_b": 120,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "18_rocket_s_honchkrow vs 26_stw_champion": {
+      "wins_a": 3,
+      "wins_b": 117,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "19_ethan_s_typhlosion vs 20_cynthia_s_garchomp_ex": {
+      "wins_a": 43,
+      "wins_b": 77,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "19_ethan_s_typhlosion vs 26_stw_champion": {
+      "wins_a": 9,
+      "wins_b": 111,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "20_cynthia_s_garchomp_ex vs 20_cynthia_s_garchomp_ex": {
+      "wins_a": 57,
+      "wins_b": 63,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "20_cynthia_s_garchomp_ex vs 21_lillie_s_clefairy_ex_naic_champion": {
+      "wins_a": 70,
+      "wins_b": 50,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "20_cynthia_s_garchomp_ex vs 22_dragapult_ex_naic_2nd": {
+      "wins_a": 79,
+      "wins_b": 41,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "20_cynthia_s_garchomp_ex vs 23_slowking_naic_4th": {
+      "wins_a": 64,
+      "wins_b": 49,
+      "draws": 7,
+      "unfinished": 0
+    },
+    "20_cynthia_s_garchomp_ex vs 24_n_s_zoroark_ex_naic_10th": {
+      "wins_a": 117,
+      "wins_b": 3,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "20_cynthia_s_garchomp_ex vs 25_mega_lopunny_ex": {
+      "wins_a": 96,
+      "wins_b": 24,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "20_cynthia_s_garchomp_ex vs 26_stw_champion": {
+      "wins_a": 21,
+      "wins_b": 99,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "21_lillie_s_clefairy_ex_naic_champion vs 26_stw_champion": {
+      "wins_a": 26,
+      "wins_b": 94,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "22_dragapult_ex_naic_2nd vs 26_stw_champion": {
+      "wins_a": 19,
+      "wins_b": 101,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "23_slowking_naic_4th vs 26_stw_champion": {
+      "wins_a": 38,
+      "wins_b": 81,
+      "draws": 1,
+      "unfinished": 0
+    },
+    "24_n_s_zoroark_ex_naic_10th vs 26_stw_champion": {
+      "wins_a": 3,
+      "wins_b": 117,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "25_mega_lopunny_ex vs 26_stw_champion": {
+      "wins_a": 15,
+      "wins_b": 105,
+      "draws": 0,
+      "unfinished": 0
+    },
+    "26_stw_champion vs 26_stw_champion": {
+      "wins_a": 63,
+      "wins_b": 57,
+      "draws": 0,
+      "unfinished": 0
+    }
+  }
+}
