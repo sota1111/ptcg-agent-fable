@@ -91,6 +91,11 @@ def run_bench(agent_a: str, agent_b: str, n: int, seed: int, deck_path: str,
         "wins_a": 0, "wins_b": 0, "draws": 0, "unfinished": 0,
         "rejects": 0, "exceptions": 0, "fallbacks_a": 0, "fallbacks_b": 0,
         "decisions": 0,
+        # MCTS-agent counters (0 for agents without them). Acceptance gates
+        # (SOT-1795): budget_violations == 0 (時間切れ0) and fallbacks == 0.
+        "budget_violations_a": 0, "budget_violations_b": 0,
+        "planner_fallbacks_a": 0, "planner_fallbacks_b": 0,
+        "degraded_a": 0, "degraded_b": 0,
     }
     match_times = []
     per_decision = []
@@ -112,6 +117,13 @@ def run_bench(agent_a: str, agent_b: str, n: int, seed: int, deck_path: str,
         stats["exceptions"] += int(exception)
         stats["fallbacks_a"] += a.fallback_count
         stats["fallbacks_b"] += b.fallback_count
+        for agent, side_key in ((a, "a"), (b, "b")):
+            stats[f"budget_violations_{side_key}"] += getattr(
+                agent, "budget_violations", 0)
+            stats[f"planner_fallbacks_{side_key}"] += getattr(
+                agent, "planner_fallbacks", 0)
+            stats[f"degraded_{side_key}"] += getattr(
+                agent, "degraded_count", 0)
         if result in (0, 1):
             a_won = (result == 0) == a_plays_first
             stats["wins_a" if a_won else "wins_b"] += 1
@@ -180,6 +192,7 @@ RESULT: {report['agent_a']} vs {report['agent_b']} (n={report['n_matches']})
   win rate A (excl. draws): {report['winrate_a_excl_draws']:.4f}  Wilson95 [{report['wilson95_excl_draws'][0]:.4f}, {report['wilson95_excl_draws'][1]:.4f}]
   win rate A (draws=0.5)  : {report['winrate_a_draws_half']:.4f}
   engine rejects: {report['rejects']}  agent exceptions: {report['exceptions']}  fallbacks: A={report['fallbacks_a']} B={report['fallbacks_b']}
+  budget violations: A={report['budget_violations_a']} B={report['budget_violations_b']}  planner fallbacks: A={report['planner_fallbacks_a']} B={report['planner_fallbacks_b']}  degraded: A={report['degraded_a']} B={report['degraded_b']}
   time/match: mean {tpm['mean'] * 1000:.2f} ms  median {tpm['median'] * 1000:.2f} ms  max {tpm['max'] * 1000:.2f} ms  total {tpm['total']:.1f} s
   time/decision: mean {tpd['mean']:.3f} ms  max {tpd['max']:.3f} ms  decisions/match mean {report['decisions_per_match_mean']:.1f}
 """)

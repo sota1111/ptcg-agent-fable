@@ -16,6 +16,8 @@ import sys
 SUMMED = (
     "n_matches", "wins_a", "wins_b", "draws", "unfinished",
     "rejects", "exceptions", "fallbacks_a", "fallbacks_b", "decisions",
+    "budget_violations_a", "budget_violations_b",
+    "planner_fallbacks_a", "planner_fallbacks_b", "degraded_a", "degraded_b",
 )
 
 

@@ -1,0 +1,23 @@
+{
+  "opponent": "matsu",
+  "shards": 8,
+  "n_matches": 48,
+  "wins_fable": 22,
+  "wins_opp": 26,
+  "draws": 0,
+  "unfinished": 0,
+  "faults_fable": 0,
+  "faults_opp": 0,
+  "wins_fable_as_first": 13,
+  "n_fable_as_first": 24,
+  "max_think_s": {
+    "fable": 32.66188247571699,
+    "matsu": 31.624332389095798
+  },
+  "winrate_fable_excl_draws": 0.4583333333333333,
+  "wilson95_excl_draws": [
+    0.3257502185455351,
+    0.5970916690505266
+  ],
+  "winrate_fable_draws_half": 0.4583333333333333
+}
