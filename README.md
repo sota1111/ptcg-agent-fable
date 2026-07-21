@@ -13,7 +13,14 @@ Submission layout (top level): `main.py` + `deck.csv` + `cg/` (engine).
 
 ## Setup
 
-1. Engine + card data (copied from a sibling competition checkout, both
+1. Fetch the pinned common-core revision:
+
+   ```bash
+   git submodule update --init --recursive
+   bash scripts/check_core_compatibility.sh
+   ```
+
+2. Engine + card data (copied from a sibling competition checkout, both
    land gitignored):
 
    ```bash
@@ -22,8 +29,34 @@ Submission layout (top level): `main.py` + `deck.csv` + `cg/` (engine).
    # override: SRC=/path/to/extracted bash scripts/setup_engine.sh
    ```
 
-2. No pip dependencies for local eval (`requirements.txt` is documentation
+3. No pip dependencies for local eval (`requirements.txt` is documentation
    only) — plain `python3` works.
+
+## Shared core dependency
+
+This repository consumes [`ptcg-agent-core`](vendor/ptcg-agent-core) as a
+pinned Git submodule, matching the integration boundary used by the PTCG
+agent family.  The core owns algorithm-independent contracts and the shared
+[Kaggle submission guide](vendor/ptcg-agent-core/docs/kaggle-submission.md).
+Fable continues to own its Python adapter, deck, and search/policy code; those
+are deliberately outside the common-core contract.
+
+The pinned commit makes a checkout reproducible. To update it, first review
+the core changelog and schema versions, then run:
+
+```bash
+git -C vendor/ptcg-agent-core fetch origin main
+git -C vendor/ptcg-agent-core checkout origin/main
+bash scripts/check_core_compatibility.sh
+python3 -m unittest discover -s tests -v
+git add vendor/ptcg-agent-core
+```
+
+Commit the resulting gitlink change together with compatibility evidence.
+If an update is incompatible, restore the previously recorded gitlink with
+`git checkout -- vendor/ptcg-agent-core` and re-run
+`git submodule update --init`. Never point the submodule at an unreviewed
+moving branch during a submission build.
 
 ## Run one match
 
@@ -121,7 +154,12 @@ and reported — the acceptance gate is 0.
 ## Building a submission
 
 ```bash
-tar -czf submission.tar.gz main.py deck.csv agents cg
+bash scripts/build_submission.sh
 ```
 
-(`cg/` must come from `scripts/setup_engine.sh`; never commit the tarball.)
+The builder follows the core-owned submission layout and validates that the
+archive has the required top-level files and excludes the core checkout,
+Git metadata, caches, credentials, tests, and local evaluation code. `cg/`
+must come from `scripts/setup_engine.sh`; never commit the tarball. For setup,
+authentication, submission, result checks, and troubleshooting, follow the
+[shared core guide](vendor/ptcg-agent-core/docs/kaggle-submission.md).
