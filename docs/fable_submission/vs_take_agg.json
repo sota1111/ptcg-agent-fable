@@ -1,0 +1,23 @@
+{
+  "opponent": "take",
+  "shards": 3,
+  "n_matches": 48,
+  "wins_fable": 29,
+  "wins_opp": 19,
+  "draws": 0,
+  "unfinished": 0,
+  "faults_fable": 0,
+  "faults_opp": 0,
+  "wins_fable_as_first": 19,
+  "n_fable_as_first": 24,
+  "max_think_s": {
+    "fable": 26.257029028143734,
+    "take": 0.009915667586028576
+  },
+  "winrate_fable_excl_draws": 0.6041666666666666,
+  "wilson95_excl_draws": [
+    0.4631015459693511,
+    0.7297937350404942
+  ],
+  "winrate_fable_draws_half": 0.6041666666666666
+}

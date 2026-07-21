@@ -1,0 +1,23 @@
+{
+  "opponent": "ume",
+  "shards": 3,
+  "n_matches": 48,
+  "wins_fable": 34,
+  "wins_opp": 14,
+  "draws": 0,
+  "unfinished": 0,
+  "faults_fable": 0,
+  "faults_opp": 0,
+  "wins_fable_as_first": 21,
+  "n_fable_as_first": 24,
+  "max_think_s": {
+    "fable": 24.977867879439145,
+    "ume": 10.84502584557049
+  },
+  "winrate_fable_excl_draws": 0.7083333333333334,
+  "wilson95_excl_draws": [
+    0.5682047226383247,
+    0.8175858393813662
+  ],
+  "winrate_fable_draws_half": 0.7083333333333334
+}

@@ -1,0 +1,30 @@
+{
+  "fable_repo": "/workspaces/ptcg-agent-fable",
+  "opponent_repo": "/workspaces/ptcg-agent-matsu",
+  "opponent": "matsu",
+  "n_matches": 10,
+  "wins_fable": 3,
+  "wins_opp": 7,
+  "draws": 0,
+  "unfinished": 0,
+  "faults_fable": 0,
+  "faults_opp": 0,
+  "wins_fable_as_first": 3,
+  "n_fable_as_first": 5,
+  "winrate_fable_excl_draws": 0.3,
+  "wilson95_excl_draws": [
+    0.10778928748621183,
+    0.6032267800204347
+  ],
+  "winrate_fable_draws_half": 0.3,
+  "max_think_s": {
+    "fable": 19.21266837627627,
+    "matsu": 24.17140343086794
+  },
+  "match_time_allowance_s": 600.0,
+  "time_per_match_sec": {
+    "mean": 18.981292604794724,
+    "max": 39.550397229148075,
+    "total": 189.81292604794726
+  }
+}
