@@ -1,0 +1,1387 @@
+{
+ "submissionId": 54882738,
+ "score": "281.0",
+ "description": "SOT-1792 Sol retry; fix Kaggle exec without __file__; 120 tests; repo commit 42aee7f",
+ "date": "2026-07-21 16:48:17.950000",
+ "episodes": [
+  {
+   "id": 87362039,
+   "createTime": "2026-07-21T23:54:42.314219600Z",
+   "endTime": "2026-07-21T23:55:53.717229900Z",
+   "state": "COMPLETED",
+   "type": "EPISODE_TYPE_PUBLIC",
+   "agents": [
+    {
+     "id": 194573895,
+     "submissionId": 54145544,
+     "reward": 1,
+     "initialScore": 283.88335231112376,
+     "updatedScore": 288.43289778703434,
+     "teamId": 16374911
+    },
+    {
+     "id": 194573896,
+     "submissionId": 54882738,
+     "reward": -1,
+     "index": 1,
+     "initialScore": 294.2883572360166,
+     "updatedScore": 281.08636109715815,
+     "teamId": 16534061
+    }
+   ]
+  },
+  {
+   "id": 87361555,
+   "createTime": "2026-07-21T23:50:51.576341300Z",
+   "endTime": "2026-07-21T23:51:43.920124700Z",
+   "state": "COMPLETED",
+   "type": "EPISODE_TYPE_PUBLIC",
+   "agents": [
+    {
+     "id": 194572926,
+     "submissionId": 54847909,
+     "reward": 1,
+     "initialScore": 333.5123890253589,
+     "updatedScore": 340.02500783086003,
+     "teamId": 16371582
+    },
+    {
+     "id": 194572927,
+     "submissionId": 54882738,
+     "reward": -1,
+     "index": 1,
+     "initialScore": 306.23389712584833,
+     "updatedScore": 294.2883572360166,
+     "teamId": 16534061
+    }
+   ]
+  },
+  {
+   "id": 87342961,
+   "createTime": "2026-07-21T21:37:45.828742500Z",
+   "endTime": "2026-07-21T21:40:03.283587100Z",
+   "state": "COMPLETED",
+   "type": "EPISODE_TYPE_PUBLIC",
+   "agents": [
+    {
+     "id": 194535731,
+     "submissionId": 53762497,
+     "reward": 1,
+     "initialScore": 299.51204461916126,
+     "updatedScore": 304.2261359293596,
+     "teamId": 16376568
+    },
+    {
+     "id": 194535732,
+     "submissionId": 54882738,
+     "reward": -1,
+     "index": 1,
+     "initialScore": 321.33095484297974,
+     "updatedScore": 306.23389712584833,
+     "teamId": 16534061
+    }
+   ]
+  },
+  {
+   "id": 87338872,
+   "createTime": "2026-07-21T21:06:43.669798200Z",
+   "endTime": "2026-07-21T21:09:06.921321800Z",
+   "state": "COMPLETED",
+   "type": "EPISODE_TYPE_PUBLIC",
+   "agents": [
+    {
+     "id": 194527548,
+     "submissionId": 54882738,
+     "reward": 1,
+     "initialScore": 305.8092157795896,
+     "updatedScore": 321.33095484297974,
+     "teamId": 16534061
+    },
+    {
+     "id": 194527549,
+     "submissionId": 54305219,
+     "reward": -1,
+     "index": 1,
+     "initialScore": 320.34296848463845,
+     "updatedScore": 315.7559760036949,
+     "teamId": 16461002
+    }
+   ]
+  },
+  {
+   "id": 87335968,
+   "createTime": "2026-07-21T20:46:48.961663300Z",
+   "endTime": "2026-07-21T20:49:12.772264800Z",
+   "state": "COMPLETED",
+   "type": "EPISODE_TYPE_PUBLIC",
+   "agents": [
+    {
+     "id": 194521741,
+     "submissionId": 54882738,
+     "reward": -1,
+     "initialScore": 306.254476952047,
+     "updatedScore": 305.8092157795896,
+     "teamId": 16534061
+    },
+    {
+     "id": 194521742,
+     "submissionId": 54843946,
+     "reward": 1,
+     "index": 1,
+     "initialScore": 839.4243033476517,
+     "updatedScore": 839.5552609825636,
+     "teamId": 16378036
+    }
+   ]
+  },
+  {
+   "id": 87332093,
+   "createTime": "2026-07-21T20:18:51.675092800Z",
+   "endTime": "2026-07-21T20:21:25.305514200Z",
+   "state": "COMPLETED",
+   "type": "EPISODE_TYPE_PUBLIC",
+   "agents": [
+    {
+     "id": 194513987,
+     "submissionId": 54882738,
+     "reward": 1,
+     "initialScore": 287.9970598420598,
+     "updatedScore": 306.254476952047,
+     "teamId": 16534061
+    },
+    {
+     "id": 194513988,
+     "submissionId": 54251312,
+     "reward": -1,
+     "index": 1,
+     "initialScore": 332.28005310203605,
+     "updatedScore": 327.228458005825,
+     "teamId": 16373136
+    }
+   ]
+  },
+  {
+   "id": 87326783,
+   "createTime": "2026-07-21T19:32:04.630228700Z",
+   "endTime": "2026-07-21T19:34:05.711735900Z",
+   "state": "COMPLETED",
+   "type": "EPISODE_TYPE_PUBLIC",
+   "agents": [
+    {
+     "id": 194503367,
+     "submissionId": 54882738,
+     "reward": 1,
+     "initialScore": 271.56371295945047,
+     "updatedScore": 287.9970598420598,
+     "teamId": 16534061
+    },
+    {
+     "id": 194503368,
+     "submissionId": 53836691,
+     "reward": -1,
+     "index": 1,
+     "initialScore": 267.9877218391478,
+     "updatedScore": 263.7069234609781,
+     "teamId": 16378155
+    }
+   ]
+  },
+  {
+   "id": 87316159,
+   "createTime": "2026-07-21T18:12:00.733131300Z",
+   "endTime": "2026-07-21T18:14:23.030543900Z",
+   "state": "COMPLETED",
+   "type": "EPISODE_TYPE_PUBLIC",
+   "agents": [
+    {
+     "id": 194482100,
+     "submissionId": 54882738,
+     "reward": -1,
+     "initialScore": 284.76958739325903,
+     "updatedScore": 271.56371295945047,
+     "teamId": 16534061
+    },
+    {
+     "id": 194482105,
+     "submissionId": 54808597,
+     "reward": 1,
+     "index": 1,
+     "initialScore": 358.9462351995115,
+     "updatedScore": 362.94917006394576,
+     "teamId": 16543537
+    }
+   ]
+  },
+  {
+   "id": 87315541,
+   "createTime": "2026-07-21T18:08:00.679191100Z",
+   "endTime": "2026-07-21T18:10:39.292528300Z",
+   "state": "COMPLETED",
+   "type": "EPISODE_TYPE_PUBLIC",
+   "agents": [
+    {
+     "id": 194480871,
+     "submissionId": 54882738,
+     "reward": 1,
+     "initialScore": 265.21971766047454,
+     "updatedScore": 284.76958739325903,
+     "teamId": 16534061
+    },
+    {
+     "id": 194480872,
+     "submissionId": 54725324,
+     "reward": -1,
+     "index": 1,
+     "initialScore": 278.4599289572973,
+     "updatedScore": 272.7109777078881,
+     "teamId": 16419152
+    }
+   ]
+  },
+  {
+   "id": 87315031,
+   "createTime": "2026-07-21T18:04:00.533139400Z",
+   "endTime": "2026-07-21T18:06:52.116824300Z",
+   "state": "COMPLETED",
+   "type": "EPISODE_TYPE_PUBLIC",
+   "agents": [
+    {
+     "id": 194479853,
+     "submissionId": 54855848,
+     "reward": 1,
+     "initialScore": 332.6892245796239,
+     "updatedScore": 339.8125971050924,
+     "teamId": 16429363
+    },
+    {
+     "id": 194479855,
+     "submissionId": 54882738,
+     "reward": -1,
+     "index": 1,
+     "initialScore": 281.5598457335545,
+     "updatedScore": 265.21971766047454,
+     "teamId": 16534061
+    }
+   ]
+  },
+  {
+   "id": 87314468,
+   "createTime": "2026-07-21T18:00:00.546310900Z",
+   "endTime": "2026-07-21T18:02:15.576545900Z",
+   "state": "COMPLETED",
+   "type": "EPISODE_TYPE_PUBLIC",
+   "agents": [
+    {
+     "id": 194478729,
+     "submissionId": 54882738,
+     "reward": -1,
+     "initialScore": 302.62260525003626,
+     "updatedScore": 281.5598457335545,
+     "teamId": 16534061
+    },
+    {
+     "id": 194478730,
+     "submissionId": 54482468,
+     "reward": 1,
+     "index": 1,
+     "initialScore": 307.4634699099577,
+     "updatedScore": 311.66720289254295,
+     "teamId": 16465286
+    }
+   ]
+  },
+  {
+   "id": 87313916,
+   "createTime": "2026-07-21T17:56:30.446741200Z",
+   "endTime": "2026-07-21T17:58:38.725672300Z",
+   "state": "COMPLETED",
+   "type": "EPISODE_TYPE_PUBLIC",
+   "agents": [
+    {
+     "id": 194477625,
+     "submissionId": 54882738,
+     "reward": -1,
+     "initialScore": 318.5003905370012,
+     "updatedScore": 302.62260525003626,
+     "teamId": 16534061
+    },
+    {
+     "id": 194477626,
+     "submissionId": 54016549,
+     "reward": 1,
+     "index": 1,
+     "initialScore": 413.74881540266114,
+     "updatedScore": 416.70563749358917,
+     "teamId": 16376695
+    }
+   ]
+  },
+  {
+   "id": 87313355,
+   "createTime": "2026-07-21T17:48:47.378848Z",
+   "endTime": "2026-07-21T17:50:48.772239200Z",
+   "state": "COMPLETED",
+   "type": "EPISODE_TYPE_PUBLIC",
+   "agents": [
+    {
+     "id": 194476503,
+     "submissionId": 54882738,
+     "reward": -1,
+     "initialScore": 335.52906847663127,
+     "updatedScore": 318.5003905370012,
+     "teamId": 16534061
+    },
+    {
+     "id": 194476504,
+     "submissionId": 53852573,
+     "reward": 1,
+     "index": 1,
+     "initialScore": 431.0770174328152,
+     "updatedScore": 434.02169829622227,
+     "teamId": 16392432
+    }
+   ]
+  },
+  {
+   "id": 87312816,
+   "createTime": "2026-07-21T17:44:47.116630500Z",
+   "endTime": "2026-07-21T17:47:18.153856500Z",
+   "state": "COMPLETED",
+   "type": "EPISODE_TYPE_PUBLIC",
+   "agents": [
+    {
+     "id": 194475425,
+     "submissionId": 53886645,
+     "reward": -1,
+     "initialScore": 240.4631678267303,
+     "updatedScore": 237.27219884625666,
+     "teamId": 16379184
+    },
+    {
+     "id": 194475426,
+     "submissionId": 54882738,
+     "reward": 1,
+     "index": 1,
+     "initialScore": 315.46930809666264,
+     "updatedScore": 335.52906847663127,
+     "teamId": 16534061
+    }
+   ]
+  },
+  {
+   "id": 87312276,
+   "createTime": "2026-07-21T17:41:13.242236100Z",
+   "endTime": "2026-07-21T17:43:30.012405100Z",
+   "state": "COMPLETED",
+   "type": "EPISODE_TYPE_PUBLIC",
+   "agents": [
+    {
+     "id": 194474345,
+     "submissionId": 54431166,
+     "reward": -1,
+     "initialScore": 310.63807996832554,
+     "updatedScore": 306.0637492505554,
+     "teamId": 16389434
+    },
+    {
+     "id": 194474346,
+     "submissionId": 54882738,
+     "reward": 1,
+     "index": 1,
+     "initialScore": 283.3848010948112,
+     "updatedScore": 315.46930809666264,
+     "teamId": 16534061
+    }
+   ]
+  },
+  {
+   "id": 87311734,
+   "createTime": "2026-07-21T17:33:49.875132500Z",
+   "endTime": "2026-07-21T17:36:09.738063800Z",
+   "state": "COMPLETED",
+   "type": "EPISODE_TYPE_PUBLIC",
+   "agents": [
+    {
+     "id": 194473261,
+     "submissionId": 54882738,
+     "reward": 1,
+     "initialScore": 246.589881822792,
+     "updatedScore": 283.3848010948112,
+     "teamId": 16534061
+    },
+    {
+     "id": 194473262,
+     "submissionId": 54778493,
+     "reward": -1,
+     "index": 1,
+     "initialScore": 282.4511068330718,
+     "updatedScore": 276.94531642480774,
+     "teamId": 16421859
+    }
+   ]
+  },
+  {
+   "id": 87311171,
+   "createTime": "2026-07-21T17:29:51.770552500Z",
+   "endTime": "2026-07-21T17:32:12.464214500Z",
+   "state": "COMPLETED",
+   "type": "EPISODE_TYPE_PUBLIC",
+   "agents": [
+    {
+     "id": 194472137,
+     "submissionId": 54836719,
+     "reward": 1,
+     "initialScore": 329.2113365693265,
+     "updatedScore": 335.4394520871832,
+     "teamId": 16382632
+    },
+    {
+     "id": 194472140,
+     "submissionId": 54882738,
+     "reward": -1,
+     "index": 1,
+     "initialScore": 276.7132926096017,
+     "updatedScore": 246.589881822792,
+     "teamId": 16534061
+    }
+   ]
+  },
+  {
+   "id": 87310646,
+   "createTime": "2026-07-21T17:25:50.597025700Z",
+   "endTime": "2026-07-21T17:28:00.248067600Z",
+   "state": "COMPLETED",
+   "type": "EPISODE_TYPE_PUBLIC",
+   "agents": [
+    {
+     "id": 194471085,
+     "submissionId": 54646905,
+     "reward": 1,
+     "initialScore": 836.3110014975418,
+     "updatedScore": 836.4467689431156,
+     "teamId": 16539371
+    },
+    {
+     "id": 194471086,
+     "submissionId": 54882738,
+     "reward": -1,
+     "index": 1,
+     "initialScore": 277.93833563249814,
+     "updatedScore": 276.7132926096017,
+     "teamId": 16534061
+    }
+   ]
+  },
+  {
+   "id": 87310103,
+   "createTime": "2026-07-21T17:21:53.151887600Z",
+   "endTime": "2026-07-21T17:24:13.127780800Z",
+   "state": "COMPLETED",
+   "type": "EPISODE_TYPE_PUBLIC",
+   "agents": [
+    {
+     "id": 194469995,
+     "submissionId": 54882738,
+     "reward": -1,
+     "initialScore": 281.13892321448446,
+     "updatedScore": 277.93833563249814,
+     "teamId": 16534061
+    },
+    {
+     "id": 194469996,
+     "submissionId": 54627565,
+     "reward": 1,
+     "index": 1,
+     "initialScore": 736.9852566975293,
+     "updatedScore": 737.3306590540819,
+     "teamId": 16446132
+    }
+   ]
+  },
+  {
+   "id": 87309578,
+   "createTime": "2026-07-21T17:17:50.089200200Z",
+   "endTime": "2026-07-21T17:20:36.063622800Z",
+   "state": "COMPLETED",
+   "type": "EPISODE_TYPE_PUBLIC",
+   "agents": [
+    {
+     "id": 194468945,
+     "submissionId": 54881124,
+     "reward": -1,
+     "initialScore": 317.46450370185954,
+     "updatedScore": 299.77300904152634,
+     "teamId": 16558493
+    },
+    {
+     "id": 194468946,
+     "submissionId": 54882738,
+     "reward": 1,
+     "index": 1,
+     "initialScore": 225.10558585953407,
+     "updatedScore": 281.13892321448446,
+     "teamId": 16534061
+    }
+   ]
+  },
+  {
+   "id": 87309015,
+   "createTime": "2026-07-21T17:13:50.033994700Z",
+   "endTime": "2026-07-21T17:16:03.552410400Z",
+   "state": "COMPLETED",
+   "type": "EPISODE_TYPE_PUBLIC",
+   "agents": [
+    {
+     "id": 194467820,
+     "submissionId": 54882738,
+     "reward": -1,
+     "initialScore": 281.1442237288517,
+     "updatedScore": 225.10558585953407,
+     "teamId": 16534061
+    },
+    {
+     "id": 194467821,
+     "submissionId": 54855884,
+     "reward": 1,
+     "index": 1,
+     "initialScore": 245.53251809681686,
+     "updatedScore": 258.59507259891154,
+     "teamId": 16487856
+    }
+   ]
+  },
+  {
+   "id": 87308494,
+   "createTime": "2026-07-21T17:09:51.983133800Z",
+   "endTime": "2026-07-21T17:12:17.379205300Z",
+   "state": "COMPLETED",
+   "type": "EPISODE_TYPE_PUBLIC",
+   "agents": [
+    {
+     "id": 194466777,
+     "submissionId": 54780468,
+     "reward": -1,
+     "initialScore": 204.9703339971924,
+     "updatedScore": 198.81745198688506,
+     "teamId": 16463045
+    },
+    {
+     "id": 194466778,
+     "submissionId": 54882738,
+     "reward": 1,
+     "index": 1,
+     "initialScore": 224.0648309484433,
+     "updatedScore": 281.1442237288517,
+     "teamId": 16534061
+    }
+   ]
+  },
+  {
+   "id": 87307943,
+   "createTime": "2026-07-21T17:05:50.810067200Z",
+   "endTime": "2026-07-21T17:08:07.696223300Z",
+   "state": "COMPLETED",
+   "type": "EPISODE_TYPE_PUBLIC",
+   "agents": [
+    {
+     "id": 194465675,
+     "submissionId": 54882738,
+     "reward": -1,
+     "initialScore": 283.74992632298756,
+     "updatedScore": 224.0648309484433,
+     "teamId": 16534061
+    },
+    {
+     "id": 194465676,
+     "submissionId": 53774410,
+     "reward": 1,
+     "index": 1,
+     "initialScore": 344.57126877210334,
+     "updatedScore": 347.61452545613315,
+     "teamId": 16379050
+    }
+   ]
+  },
+  {
+   "id": 87307388,
+   "createTime": "2026-07-21T17:01:53.321160900Z",
+   "endTime": "2026-07-21T17:04:15.164880200Z",
+   "state": "COMPLETED",
+   "type": "EPISODE_TYPE_PUBLIC",
+   "agents": [
+    {
+     "id": 194464556,
+     "submissionId": 54882738,
+     "reward": -1,
+     "initialScore": 349.13189582091206,
+     "updatedScore": 283.74992632298756,
+     "teamId": 16534061
+    },
+    {
+     "id": 194464557,
+     "submissionId": 54717268,
+     "reward": 1,
+     "index": 1,
+     "initialScore": 430.28660977013493,
+     "updatedScore": 433.0579908301681,
+     "teamId": 16393227
+    }
+   ]
+  },
+  {
+   "id": 87306839,
+   "createTime": "2026-07-21T16:57:49.617944500Z",
+   "endTime": "2026-07-21T16:59:52.988298300Z",
+   "state": "COMPLETED",
+   "type": "EPISODE_TYPE_PUBLIC",
+   "agents": [
+    {
+     "id": 194463467,
+     "submissionId": 54369060,
+     "reward": 1,
+     "initialScore": 436.7692927218462,
+     "updatedScore": 440.33610306091316,
+     "teamId": 16490963
+    },
+    {
+     "id": 194463468,
+     "submissionId": 54882738,
+     "reward": -1,
+     "index": 1,
+     "initialScore": 448.7842091715782,
+     "updatedScore": 349.13189582091206,
+     "teamId": 16534061
+    }
+   ]
+  },
+  {
+   "id": 87306276,
+   "createTime": "2026-07-21T16:53:49.661244300Z",
+   "endTime": "2026-07-21T16:55:48.949612600Z",
+   "state": "COMPLETED",
+   "type": "EPISODE_TYPE_PUBLIC",
+   "agents": [
+    {
+     "id": 194462341,
+     "submissionId": 54882738,
+     "reward": -1,
+     "initialScore": 600,
+     "updatedScore": 448.7842091715782,
+     "teamId": 16534061
+    },
+    {
+     "id": 194462342,
+     "submissionId": 54292620,
+     "reward": 1,
+     "index": 1,
+     "initialScore": 466.09625138285793,
+     "updatedScore": 470.72723497697837,
+     "teamId": 16388521
+    }
+   ]
+  },
+  {
+   "id": 87305608,
+   "createTime": "2026-07-21T16:48:18.292990700Z",
+   "endTime": "2026-07-21T16:50:22.320055300Z",
+   "state": "COMPLETED",
+   "type": "EPISODE_TYPE_VALIDATION",
+   "agents": [
+    {
+     "id": 194461005,
+     "submissionId": 54882738,
+     "reward": -1,
+     "updatedScore": 600,
+     "teamId": 16534061
+    },
+    {
+     "id": 194461006,
+     "submissionId": 54882738,
+     "reward": 1,
+     "index": 1,
+     "updatedScore": 600,
+     "teamId": 16534061
+    }
+   ]
+  }
+ ],
+ "teams": [
+  {
+   "id": 16371582,
+   "teamName": "Lizzi Ti",
+   "competitionId": 116727,
+   "teamLeaderId": 13418506,
+   "submissionCount": 2,
+   "lastSubmissionDate": "2026-07-20T07:30:22.470Z",
+   "publicLeaderboardSubmissionId": 54847909,
+   "teamMembers": [
+    {
+     "displayName": "Lizzi",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13418506-kg.jpeg?t=2026-06-19-16-11-01",
+     "url": "/lizziti",
+     "userName": "lizziti",
+     "tier": "CONTRIBUTOR",
+     "id": 13418506
+    }
+   ]
+  },
+  {
+   "id": 16373136,
+   "teamName": "\u85e4\u7530\u8056\u77e2",
+   "competitionId": 116727,
+   "teamLeaderId": 35122535,
+   "submissionCount": 2,
+   "lastSubmissionDate": "2026-07-07T08:19:56.323333300Z",
+   "publicLeaderboardSubmissionId": 54421722,
+   "teamMembers": [
+    {
+     "displayName": "fs_emilia",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/emiliasabao",
+     "userName": "emiliasabao",
+     "tier": "CONTRIBUTOR",
+     "id": 35122535
+    }
+   ]
+  },
+  {
+   "id": 16374911,
+   "teamName": "MrSamu18",
+   "competitionId": 116727,
+   "teamLeaderId": 35127440,
+   "submissionCount": 2,
+   "lastSubmissionDate": "2026-06-28T16:02:15.266666700Z",
+   "publicLeaderboardSubmissionId": 54143813,
+   "teamMembers": [
+    {
+     "displayName": "MrSamu18",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/mrsamu18",
+     "userName": "mrsamu18",
+     "tier": "CONTRIBUTOR",
+     "id": 35127440
+    }
+   ]
+  },
+  {
+   "id": 16376568,
+   "teamName": "KENMANGG",
+   "competitionId": 116727,
+   "teamLeaderId": 35131470,
+   "submissionCount": 2,
+   "lastSubmissionDate": "2026-06-17T04:17:39.810Z",
+   "publicLeaderboardSubmissionId": 53762908,
+   "teamMembers": [
+    {
+     "displayName": "KENMANGG",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/kenmangg",
+     "userName": "kenmangg",
+     "tier": "CONTRIBUTOR",
+     "id": 35131470
+    }
+   ]
+  },
+  {
+   "id": 16376695,
+   "teamName": "kawaiy",
+   "competitionId": 116727,
+   "teamLeaderId": 1477902,
+   "submissionCount": 2,
+   "lastSubmissionDate": "2026-06-25T00:27:28.300Z",
+   "publicLeaderboardSubmissionId": 54025259,
+   "teamMembers": [
+    {
+     "displayName": "kawaiy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1477902-kg.png",
+     "url": "/kawaiy",
+     "userName": "kawaiy",
+     "tier": "CONTRIBUTOR",
+     "id": 1477902
+    }
+   ]
+  },
+  {
+   "id": 16378036,
+   "teamName": "Ingenio",
+   "competitionId": 116727,
+   "teamLeaderId": 6677629,
+   "submissionCount": 2,
+   "lastSubmissionDate": "2026-07-20T03:19:24.196666700Z",
+   "publicLeaderboardSubmissionId": 54843946,
+   "teamMembers": [
+    {
+     "displayName": "James Michael",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/ingenio",
+     "userName": "ingenio",
+     "tier": "CONTRIBUTOR",
+     "id": 6677629
+    }
+   ]
+  },
+  {
+   "id": 16378155,
+   "teamName": "Cem Secim",
+   "competitionId": 116727,
+   "teamLeaderId": 33433359,
+   "submissionCount": 2,
+   "lastSubmissionDate": "2026-06-19T05:42:09.030Z",
+   "publicLeaderboardSubmissionId": 53836691,
+   "teamMembers": [
+    {
+     "displayName": "Cem Secim",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/cemsecim1981",
+     "userName": "cemsecim1981",
+     "tier": "CONTRIBUTOR",
+     "id": 33433359
+    }
+   ]
+  },
+  {
+   "id": 16379050,
+   "teamName": "Benedek Brandschott",
+   "competitionId": 116727,
+   "teamLeaderId": 13290919,
+   "submissionCount": 3,
+   "lastSubmissionDate": "2026-06-19T21:19:32.726666700Z",
+   "publicLeaderboardSubmissionId": 53860802,
+   "teamMembers": [
+    {
+     "displayName": "Benedek Brandschott",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/benedekbrandschott",
+     "userName": "benedekbrandschott",
+     "tier": "CONTRIBUTOR",
+     "id": 13290919
+    }
+   ]
+  },
+  {
+   "id": 16379184,
+   "teamName": "Shota Yamazaki",
+   "competitionId": 116727,
+   "teamLeaderId": 35055573,
+   "submissionCount": 2,
+   "lastSubmissionDate": "2026-06-20T15:18:35.103333300Z",
+   "publicLeaderboardSubmissionId": 53872204,
+   "teamMembers": [
+    {
+     "displayName": "Shota Yamazaki",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/shotaymzk1231",
+     "userName": "shotaymzk1231",
+     "tier": "CONTRIBUTOR",
+     "id": 35055573
+    }
+   ]
+  },
+  {
+   "id": 16382632,
+   "teamName": "Tuna Xiao",
+   "competitionId": 116727,
+   "teamLeaderId": 33886980,
+   "submissionCount": 2,
+   "lastSubmissionDate": "2026-07-20T18:27:02.683333300Z",
+   "publicLeaderboardSubmissionId": 54860137,
+   "teamMembers": [
+    {
+     "displayName": "Tuna Xiao",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/tunaxiao",
+     "userName": "tunaxiao",
+     "tier": "CONTRIBUTOR",
+     "id": 33886980
+    }
+   ]
+  },
+  {
+   "id": 16388521,
+   "teamName": "cha7ura",
+   "competitionId": 116727,
+   "teamLeaderId": 1298505,
+   "submissionCount": 2,
+   "lastSubmissionDate": "2026-07-04T05:23:13.096666700Z",
+   "publicLeaderboardSubmissionId": 54319557,
+   "teamMembers": [
+    {
+     "displayName": "cha7ura",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/cha7ura",
+     "userName": "cha7ura",
+     "tier": "CONTRIBUTOR",
+     "id": 1298505
+    }
+   ]
+  },
+  {
+   "id": 16389434,
+   "teamName": "matsu12",
+   "competitionId": 116727,
+   "teamLeaderId": 35166703,
+   "submissionCount": 2,
+   "lastSubmissionDate": "2026-07-07T14:04:53.756666700Z",
+   "publicLeaderboardSubmissionId": 54203279,
+   "teamMembers": [
+    {
+     "displayName": "matsu12",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/matsu12",
+     "userName": "matsu12",
+     "tier": "CONTRIBUTOR",
+     "id": 35166703
+    }
+   ]
+  },
+  {
+   "id": 16392432,
+   "teamName": "af21081",
+   "competitionId": 116727,
+   "teamLeaderId": 26456632,
+   "submissionCount": 2,
+   "lastSubmissionDate": "2026-06-19T14:53:30.766666700Z",
+   "publicLeaderboardSubmissionId": 53852573,
+   "teamMembers": [
+    {
+     "displayName": "hagi94",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/af21081",
+     "userName": "af21081",
+     "tier": "CONTRIBUTOR",
+     "id": 26456632
+    }
+   ]
+  },
+  {
+   "id": 16393227,
+   "teamName": "SPARSH PATEL",
+   "competitionId": 116727,
+   "teamLeaderId": 17567410,
+   "submissionCount": 2,
+   "lastSubmissionDate": "2026-07-16T13:39:14.093333300Z",
+   "publicLeaderboardSubmissionId": 54717268,
+   "teamMembers": [
+    {
+     "displayName": "SPARSH PATEL",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/sparsh123456789",
+     "userName": "sparsh123456789",
+     "tier": "CONTRIBUTOR",
+     "id": 17567410
+    }
+   ]
+  },
+  {
+   "id": 16419152,
+   "teamName": "yayoc",
+   "competitionId": 116727,
+   "teamLeaderId": 373366,
+   "submissionCount": 2,
+   "lastSubmissionDate": "2026-07-15T12:33:45.786666700Z",
+   "publicLeaderboardSubmissionId": 54646656,
+   "teamMembers": [
+    {
+     "displayName": "yayoc",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/373366-kg.jpg?t=2024-06-28-01-17-24",
+     "url": "/yayoctokyo",
+     "userName": "yayoctokyo",
+     "tier": "CONTRIBUTOR",
+     "id": 373366
+    }
+   ]
+  },
+  {
+   "id": 16421859,
+   "teamName": "Amalgam",
+   "competitionId": 116727,
+   "teamLeaderId": 35121908,
+   "submissionCount": 2,
+   "lastSubmissionDate": "2026-07-17T08:08:56.906666700Z",
+   "publicLeaderboardSubmissionId": 54778493,
+   "teamMembers": [
+    {
+     "displayName": "Amalgam",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/zqgk52ar",
+     "userName": "zqgk52ar",
+     "tier": "CONTRIBUTOR",
+     "id": 35121908
+    }
+   ]
+  },
+  {
+   "id": 16429363,
+   "teamName": "Richard Tang",
+   "competitionId": 116727,
+   "teamLeaderId": 34491359,
+   "submissionCount": 2,
+   "lastSubmissionDate": "2026-07-20T14:34:29.483333300Z",
+   "publicLeaderboardSubmissionId": 54766680,
+   "teamMembers": [
+    {
+     "displayName": "Richard Tang",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/richardgtang",
+     "userName": "richardgtang",
+     "tier": "CONTRIBUTOR",
+     "id": 34491359
+    }
+   ]
+  },
+  {
+   "id": 16446132,
+   "teamName": "neibyr",
+   "competitionId": 116727,
+   "teamLeaderId": 836544,
+   "submissionCount": 2,
+   "lastSubmissionDate": "2026-07-13T01:08:57.366666700Z",
+   "publicLeaderboardSubmissionId": 54625730,
+   "teamMembers": [
+    {
+     "displayName": "Kirill Tushin",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/836544-kg.jpg",
+     "url": "/neibyr",
+     "userName": "neibyr",
+     "tier": "EXPERT",
+     "id": 836544
+    }
+   ]
+  },
+  {
+   "id": 16461002,
+   "teamName": "PLReddy23",
+   "competitionId": 116727,
+   "teamLeaderId": 31140120,
+   "submissionCount": 2,
+   "lastSubmissionDate": "2026-07-03T17:46:07.126666700Z",
+   "publicLeaderboardSubmissionId": 54305817,
+   "teamMembers": [
+    {
+     "displayName": "PLReddy23",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/plreddy23",
+     "userName": "plreddy23",
+     "tier": "CONTRIBUTOR",
+     "id": 31140120
+    }
+   ]
+  },
+  {
+   "id": 16463045,
+   "teamName": "biubiubiu~",
+   "competitionId": 116727,
+   "teamLeaderId": 2550340,
+   "submissionCount": 2,
+   "lastSubmissionDate": "2026-07-21T10:26:29.953333300Z",
+   "publicLeaderboardSubmissionId": 54874982,
+   "teamMembers": [
+    {
+     "displayName": "biubiubiu~",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2550340-kg.jpg",
+     "url": "/mengvision",
+     "userName": "mengvision",
+     "tier": "CONTRIBUTOR",
+     "id": 2550340
+    }
+   ]
+  },
+  {
+   "id": 16465286,
+   "teamName": "JunWoo \u201cJunu1229\u201d Kim",
+   "competitionId": 116727,
+   "teamLeaderId": 24493204,
+   "submissionCount": 2,
+   "lastSubmissionDate": "2026-07-09T10:13:28.026666700Z",
+   "publicLeaderboardSubmissionId": 54490186,
+   "teamMembers": [
+    {
+     "displayName": "JunWoo \u201cJunu1229\u201d Kim",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/junwoojunu1229kim",
+     "userName": "junwoojunu1229kim",
+     "tier": "CONTRIBUTOR",
+     "id": 24493204
+    }
+   ]
+  },
+  {
+   "id": 16487856,
+   "teamName": "Choco",
+   "competitionId": 116727,
+   "teamLeaderId": 9906843,
+   "submissionCount": 2,
+   "lastSubmissionDate": "2026-07-21T00:37:02.573333300Z",
+   "publicLeaderboardSubmissionId": 54865275,
+   "teamMembers": [
+    {
+     "displayName": "Cheuk Lun Ho",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/cheuklunho",
+     "userName": "cheuklunho",
+     "tier": "CONTRIBUTOR",
+     "id": 9906843
+    }
+   ]
+  },
+  {
+   "id": 16490963,
+   "teamName": "Szymon K\u0142api\u0144ski",
+   "competitionId": 116727,
+   "teamLeaderId": 28784819,
+   "submissionCount": 2,
+   "lastSubmissionDate": "2026-07-06T11:23:41.783333300Z",
+   "publicLeaderboardSubmissionId": 54392928,
+   "teamMembers": [
+    {
+     "displayName": "Szymon K\u0142api\u0144ski",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28784819-kg.png?t=2026-07-01-12-51-38",
+     "url": "/szymonkapiski",
+     "userName": "szymonkapiski",
+     "tier": "CONTRIBUTOR",
+     "id": 28784819
+    }
+   ]
+  },
+  {
+   "id": 16534061,
+   "teamName": "sota1111",
+   "competitionId": 116727,
+   "teamLeaderId": 11185198,
+   "submissionCount": 2,
+   "lastSubmissionDate": "2026-07-21T17:06:07.586666700Z",
+   "publicLeaderboardSubmissionId": 54883092,
+   "teamMembers": [
+    {
+     "displayName": "sota1111",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/sota1111",
+     "userName": "sota1111",
+     "tier": "CONTRIBUTOR",
+     "id": 11185198
+    }
+   ]
+  },
+  {
+   "id": 16539371,
+   "teamName": "Edith Yong",
+   "competitionId": 116727,
+   "teamLeaderId": 33097820,
+   "submissionCount": 1,
+   "lastSubmissionDate": "2026-07-13T12:54:58.043333300Z",
+   "publicLeaderboardSubmissionId": 54646905,
+   "teamMembers": [
+    {
+     "displayName": "Edith Yong",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/33097820-kg.jpeg?t=2026-03-21-08-24-01",
+     "url": "/edithyong",
+     "userName": "edithyong",
+     "tier": "CONTRIBUTOR",
+     "id": 33097820
+    }
+   ]
+  },
+  {
+   "id": 16543537,
+   "teamName": "Matcha2Greentea",
+   "competitionId": 116727,
+   "teamLeaderId": 17107264,
+   "submissionCount": 2,
+   "lastSubmissionDate": "2026-07-18T23:31:24.596666700Z",
+   "publicLeaderboardSubmissionId": 54817651,
+   "teamMembers": [
+    {
+     "displayName": "Matcha2Greentea",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/matcha2greentea",
+     "userName": "matcha2greentea",
+     "tier": "CONTRIBUTOR",
+     "id": 17107264
+    }
+   ]
+  },
+  {
+   "id": 16558493,
+   "teamName": "duong nguyen",
+   "competitionId": 116727,
+   "teamLeaderId": 24989196,
+   "submissionCount": 2,
+   "lastSubmissionDate": "2026-07-21T15:31:33.046666700Z",
+   "publicLeaderboardSubmissionId": 54859414,
+   "teamMembers": [
+    {
+     "displayName": "duong nguyen",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/duongnguyen161",
+     "userName": "duongnguyen161",
+     "tier": "CONTRIBUTOR",
+     "id": 24989196
+    }
+   ]
+  }
+ ],
+ "submissions": [
+  {
+   "id": 53762497,
+   "dateSubmitted": "2026-06-17T03:57:40.110Z",
+   "teamId": 16376568,
+   "status": "COMPLETE"
+  },
+  {
+   "id": 53774410,
+   "dateSubmitted": "2026-06-17T11:49:21.320Z",
+   "teamId": 16379050,
+   "status": "COMPLETE"
+  },
+  {
+   "id": 53836691,
+   "dateSubmitted": "2026-06-19T05:42:09.030Z",
+   "teamId": 16378155,
+   "status": "COMPLETE"
+  },
+  {
+   "id": 53852573,
+   "dateSubmitted": "2026-06-19T14:53:30.767Z",
+   "teamId": 16392432,
+   "status": "COMPLETE"
+  },
+  {
+   "id": 53886645,
+   "dateSubmitted": "2026-06-20T15:18:35.103Z",
+   "teamId": 16379184,
+   "status": "COMPLETE"
+  },
+  {
+   "id": 54016549,
+   "dateSubmitted": "2026-06-24T16:08:54.943Z",
+   "teamId": 16376695,
+   "status": "COMPLETE"
+  },
+  {
+   "id": 54145544,
+   "dateSubmitted": "2026-06-28T16:02:15.267Z",
+   "teamId": 16374911,
+   "status": "COMPLETE"
+  },
+  {
+   "id": 54251312,
+   "dateSubmitted": "2026-07-02T03:17:38.023Z",
+   "teamId": 16373136,
+   "status": "COMPLETE"
+  },
+  {
+   "id": 54292620,
+   "dateSubmitted": "2026-07-03T08:58:02.513Z",
+   "teamId": 16388521,
+   "status": "COMPLETE"
+  },
+  {
+   "id": 54305219,
+   "dateSubmitted": "2026-07-03T17:21:11.860Z",
+   "teamId": 16461002,
+   "status": "COMPLETE"
+  },
+  {
+   "id": 54369060,
+   "dateSubmitted": "2026-07-05T16:56:24.350Z",
+   "teamId": 16490963,
+   "status": "COMPLETE"
+  },
+  {
+   "id": 54431166,
+   "dateSubmitted": "2026-07-07T14:04:53.757Z",
+   "teamId": 16389434,
+   "status": "COMPLETE"
+  },
+  {
+   "id": 54482468,
+   "dateSubmitted": "2026-07-09T04:49:39.073Z",
+   "teamId": 16465286,
+   "status": "COMPLETE"
+  },
+  {
+   "id": 54627565,
+   "dateSubmitted": "2026-07-13T01:08:57.367Z",
+   "teamId": 16446132,
+   "status": "COMPLETE"
+  },
+  {
+   "id": 54646905,
+   "dateSubmitted": "2026-07-13T12:54:58.043Z",
+   "teamId": 16539371,
+   "status": "COMPLETE"
+  },
+  {
+   "id": 54717268,
+   "dateSubmitted": "2026-07-15T07:50:13.930Z",
+   "teamId": 16393227,
+   "status": "COMPLETE"
+  },
+  {
+   "id": 54725324,
+   "dateSubmitted": "2026-07-15T12:33:45.787Z",
+   "teamId": 16419152,
+   "status": "COMPLETE"
+  },
+  {
+   "id": 54778493,
+   "dateSubmitted": "2026-07-17T08:08:56.907Z",
+   "teamId": 16421859,
+   "status": "COMPLETE"
+  },
+  {
+   "id": 54780468,
+   "dateSubmitted": "2026-07-17T10:07:24.037Z",
+   "teamId": 16463045,
+   "status": "COMPLETE"
+  },
+  {
+   "id": 54808597,
+   "dateSubmitted": "2026-07-18T13:18:22.627Z",
+   "teamId": 16543537,
+   "status": "COMPLETE"
+  },
+  {
+   "id": 54836719,
+   "dateSubmitted": "2026-07-19T18:06:26.757Z",
+   "teamId": 16382632,
+   "status": "COMPLETE"
+  },
+  {
+   "id": 54843946,
+   "dateSubmitted": "2026-07-20T03:19:24.197Z",
+   "teamId": 16378036,
+   "status": "COMPLETE"
+  },
+  {
+   "id": 54847909,
+   "dateSubmitted": "2026-07-20T07:30:22.470Z",
+   "teamId": 16371582,
+   "status": "COMPLETE"
+  },
+  {
+   "id": 54855848,
+   "dateSubmitted": "2026-07-20T14:34:29.483Z",
+   "teamId": 16429363,
+   "status": "COMPLETE"
+  },
+  {
+   "id": 54855884,
+   "dateSubmitted": "2026-07-20T14:35:53.513Z",
+   "teamId": 16487856,
+   "status": "COMPLETE"
+  },
+  {
+   "id": 54881124,
+   "dateSubmitted": "2026-07-21T15:31:33.047Z",
+   "teamId": 16558493,
+   "status": "COMPLETE"
+  },
+  {
+   "id": 54882738,
+   "dateSubmitted": "2026-07-21T16:48:17.950Z",
+   "teamId": 16534061,
+   "status": "COMPLETE"
+  }
+ ]
+}

@@ -1,0 +1,532 @@
+{
+ "submissions": [
+  {
+   "submissionId": 54811671,
+   "score": "557.2",
+   "description": "SOT-1721 retry3 matsu champion MCTS; agent=f45cefd; deck=42068a180390; runtime root fix",
+   "n_played": 76,
+   "wins": 31,
+   "losses": 45,
+   "draws": 0,
+   "win_rate": 0.408,
+   "by_band": {
+    "<500": {
+     "n": 6,
+     "win": 5,
+     "loss": 1,
+     "draw": 0
+    },
+    "500-600": {
+     "n": 31,
+     "win": 16,
+     "loss": 15,
+     "draw": 0
+    },
+    "600-700": {
+     "n": 27,
+     "win": 8,
+     "loss": 19,
+     "draw": 0
+    },
+    "700-850": {
+     "n": 8,
+     "win": 1,
+     "loss": 7,
+     "draw": 0
+    },
+    "850-1000": {
+     "n": 1,
+     "win": 1,
+     "loss": 0,
+     "draw": 0
+    },
+    "1000+ (~top1%)": {
+     "n": 2,
+     "win": 0,
+     "loss": 2,
+     "draw": 0
+    },
+    "unknown": {
+     "n": 1,
+     "win": 0,
+     "loss": 1,
+     "draw": 0
+    }
+   },
+   "by_gap": {
+    "much_weaker (<-100)": {
+     "n": 4,
+     "win": 2,
+     "loss": 2,
+     "draw": 0
+    },
+    "weaker (-100..-25)": {
+     "n": 14,
+     "win": 11,
+     "loss": 3,
+     "draw": 0
+    },
+    "peer (-25..+25)": {
+     "n": 23,
+     "win": 11,
+     "loss": 12,
+     "draw": 0
+    },
+    "stronger (+25..+100)": {
+     "n": 24,
+     "win": 5,
+     "loss": 19,
+     "draw": 0
+    },
+    "much_stronger (>+100)": {
+     "n": 10,
+     "win": 2,
+     "loss": 8,
+     "draw": 0
+    },
+    "unknown": {
+     "n": 1,
+     "win": 0,
+     "loss": 1,
+     "draw": 0
+    }
+   },
+   "duration": {
+    "min": 123.2,
+    "median": 153.6,
+    "p90": 173.8,
+    "max": 250.4,
+    "n": 76
+   },
+   "long_match_win_rate": 0.333,
+   "long_match_n": 9,
+   "seat_split": {
+    "first": {
+     "n": 36,
+     "win_rate": 0.389
+    },
+    "second": {
+     "n": 40,
+     "win_rate": 0.425
+    }
+   },
+   "upset_losses": [
+    {
+     "episode": 86724621,
+     "opp_name": "arm10n",
+     "opp_final_rank": 3615,
+     "my_score": 655.1922435442474,
+     "opp_score": 531.5951400574555,
+     "gap": -123.59710348679187
+    },
+    {
+     "episode": 86721412,
+     "opp_name": "Pepijn Langeraert",
+     "opp_final_rank": 3929,
+     "my_score": 663.5819043336736,
+     "opp_score": 551.0579189918136,
+     "gap": -112.52398534186
+    },
+    {
+     "episode": 86730113,
+     "opp_name": "Insper TCG",
+     "opp_final_rank": 3462,
+     "my_score": 644.6841152776949,
+     "opp_score": 548.3173091859122,
+     "gap": -96.36680609178268
+    },
+    {
+     "episode": 87113559,
+     "opp_name": "JIBINA EA",
+     "opp_final_rank": 4328,
+     "my_score": 556.9144772634183,
+     "opp_score": 469.1204687185638,
+     "gap": -87.79400854485453
+    },
+    {
+     "episode": 86815053,
+     "opp_name": "Ingyun Ahn",
+     "opp_final_rank": 2324,
+     "my_score": 554.4851833707564,
+     "opp_score": 523.9676120648736,
+     "gap": -30.517571305882825
+    },
+    {
+     "episode": 86725692,
+     "opp_name": "tsuzuk1",
+     "opp_final_rank": 2405,
+     "my_score": 608.9316674001792,
+     "opp_score": 585.228466817693,
+     "gap": -23.70320058248626
+    },
+    {
+     "episode": 86904478,
+     "opp_name": "Hassan Tavakoli",
+     "opp_final_rank": 3498,
+     "my_score": 540.466115832716,
+     "opp_score": 518.2470653821268,
+     "gap": -22.21905045058918
+    },
+    {
+     "episode": 86742725,
+     "opp_name": "Heros",
+     "opp_final_rank": 3261,
+     "my_score": 573.0253893047319,
+     "opp_score": 553.8822769915434,
+     "gap": -19.143112313188453
+    },
+    {
+     "episode": 86736159,
+     "opp_name": "Prify Philip",
+     "opp_final_rank": 3190,
+     "my_score": 581.8749438336639,
+     "opp_score": 563.017191359534,
+     "gap": -18.85775247412994
+    },
+    {
+     "episode": 86719796,
+     "opp_name": "mewworldorder",
+     "opp_final_rank": 276,
+     "my_score": 651.0941965758574,
+     "opp_score": 635.5795540013086,
+     "gap": -15.514642574548816
+    },
+    {
+     "episode": 86971602,
+     "opp_name": "nekomanma",
+     "opp_final_rank": 2515,
+     "my_score": 536.0019220174057,
+     "opp_score": 525.8202475757579,
+     "gap": -10.181674441647829
+    },
+    {
+     "episode": 86733449,
+     "opp_name": "Klee319",
+     "opp_final_rank": 3305,
+     "my_score": 615.7595642544193,
+     "opp_score": 614.3837068792468,
+     "gap": -1.3758573751724725
+    }
+   ]
+  },
+  {
+   "submissionId": 54882738,
+   "score": "281.0",
+   "description": "SOT-1792 Sol retry; fix Kaggle exec without __file__; 120 tests; repo commit 42aee7f",
+   "n_played": 27,
+   "wins": 9,
+   "losses": 18,
+   "draws": 0,
+   "win_rate": 0.333,
+   "by_band": {
+    "<500": {
+     "n": 23,
+     "win": 9,
+     "loss": 14,
+     "draw": 0
+    },
+    "700-850": {
+     "n": 3,
+     "win": 0,
+     "loss": 3,
+     "draw": 0
+    },
+    "unknown": {
+     "n": 1,
+     "win": 0,
+     "loss": 1,
+     "draw": 0
+    }
+   },
+   "by_gap": {
+    "much_weaker (<-100)": {
+     "n": 1,
+     "win": 0,
+     "loss": 1,
+     "draw": 0
+    },
+    "weaker (-100..-25)": {
+     "n": 2,
+     "win": 1,
+     "loss": 1,
+     "draw": 0
+    },
+    "peer (-25..+25)": {
+     "n": 8,
+     "win": 4,
+     "loss": 4,
+     "draw": 0
+    },
+    "stronger (+25..+100)": {
+     "n": 12,
+     "win": 4,
+     "loss": 8,
+     "draw": 0
+    },
+    "much_stronger (>+100)": {
+     "n": 3,
+     "win": 0,
+     "loss": 3,
+     "draw": 0
+    },
+    "unknown": {
+     "n": 1,
+     "win": 0,
+     "loss": 1,
+     "draw": 0
+    }
+   },
+   "duration": {
+    "min": 52.3,
+    "median": 137.5,
+    "p90": 153.6,
+    "max": 171.6,
+    "n": 27
+   },
+   "long_match_win_rate": 0.75,
+   "long_match_n": 4,
+   "seat_split": {
+    "first": {
+     "n": 16,
+     "win_rate": 0.312
+    },
+    "second": {
+     "n": 11,
+     "win_rate": 0.364
+    }
+   },
+   "upset_losses": [
+    {
+     "episode": 87306276,
+     "opp_name": "cha7ura",
+     "opp_final_rank": 2484,
+     "my_score": 600,
+     "opp_score": 466.09625138285793,
+     "gap": -133.90374861714207
+    },
+    {
+     "episode": 87309015,
+     "opp_name": "Choco",
+     "opp_final_rank": 4710,
+     "my_score": 281.1442237288517,
+     "opp_score": 245.53251809681686,
+     "gap": -35.61170563203487
+    },
+    {
+     "episode": 87342961,
+     "opp_name": "KENMANGG",
+     "opp_final_rank": 5125,
+     "my_score": 321.33095484297974,
+     "opp_score": 299.51204461916126,
+     "gap": -21.818910223818477
+    },
+    {
+     "episode": 87306839,
+     "opp_name": "Szymon K\u0142api\u0144ski",
+     "opp_final_rank": 4069,
+     "my_score": 448.7842091715782,
+     "opp_score": 436.7692927218462,
+     "gap": -12.01491644973197
+    },
+    {
+     "episode": 87362039,
+     "opp_name": "MrSamu18",
+     "opp_final_rank": 3888,
+     "my_score": 294.2883572360166,
+     "opp_score": 283.88335231112376,
+     "gap": -10.405004924892864
+    }
+   ]
+  },
+  {
+   "submissionId": 54883092,
+   "score": "551.2",
+   "description": "ptcg-agent-fable 34064b3",
+   "n_played": 42,
+   "wins": 21,
+   "losses": 21,
+   "draws": 0,
+   "win_rate": 0.5,
+   "by_band": {
+    "<500": {
+     "n": 8,
+     "win": 6,
+     "loss": 2,
+     "draw": 0
+    },
+    "500-600": {
+     "n": 19,
+     "win": 10,
+     "loss": 9,
+     "draw": 0
+    },
+    "600-700": {
+     "n": 14,
+     "win": 4,
+     "loss": 10,
+     "draw": 0
+    },
+    "unknown": {
+     "n": 1,
+     "win": 1,
+     "loss": 0,
+     "draw": 0
+    }
+   },
+   "by_gap": {
+    "much_weaker (<-100)": {
+     "n": 2,
+     "win": 2,
+     "loss": 0,
+     "draw": 0
+    },
+    "weaker (-100..-25)": {
+     "n": 9,
+     "win": 5,
+     "loss": 4,
+     "draw": 0
+    },
+    "peer (-25..+25)": {
+     "n": 14,
+     "win": 6,
+     "loss": 8,
+     "draw": 0
+    },
+    "stronger (+25..+100)": {
+     "n": 15,
+     "win": 6,
+     "loss": 9,
+     "draw": 0
+    },
+    "much_stronger (>+100)": {
+     "n": 1,
+     "win": 1,
+     "loss": 0,
+     "draw": 0
+    },
+    "unknown": {
+     "n": 1,
+     "win": 1,
+     "loss": 0,
+     "draw": 0
+    }
+   },
+   "duration": {
+    "min": 53.5,
+    "median": 151.1,
+    "p90": 190.4,
+    "max": 709.7,
+    "n": 42
+   },
+   "long_match_win_rate": 0.667,
+   "long_match_n": 6,
+   "seat_split": {
+    "first": {
+     "n": 20,
+     "win_rate": 0.55
+    },
+    "second": {
+     "n": 22,
+     "win_rate": 0.455
+    }
+   },
+   "upset_losses": [
+    {
+     "episode": 87352496,
+     "opp_name": "zhang xxxy",
+     "opp_final_rank": 3437,
+     "my_score": 560.3316434503156,
+     "opp_score": 482.1481522191996,
+     "gap": -78.18349123111602
+    },
+    {
+     "episode": 87325043,
+     "opp_name": "MatsuyamaKAiho",
+     "opp_final_rank": 4145,
+     "my_score": 556.3653282047217,
+     "opp_score": 493.9787123754743,
+     "gap": -62.386615829247376
+    },
+    {
+     "episode": 87314343,
+     "opp_name": "\u30c1\u30e3\u30fc\u30cf\u30f3",
+     "opp_final_rank": 3135,
+     "my_score": 549.9926258404748,
+     "opp_score": 520.203144840458,
+     "gap": -29.78948100001685
+    },
+    {
+     "episode": 87308395,
+     "opp_name": "MartinZiserman",
+     "opp_final_rank": 793,
+     "my_score": 600,
+     "opp_score": 572.4007161656124,
+     "gap": -27.59928383438762
+    },
+    {
+     "episode": 87316526,
+     "opp_name": "Hiroto Tarora",
+     "opp_final_rank": 3991,
+     "my_score": 544.1208779905974,
+     "opp_score": 519.2524231096894,
+     "gap": -24.86845488090796
+    },
+    {
+     "episode": 87315967,
+     "opp_name": "hieda kazvki",
+     "opp_final_rank": 3779,
+     "my_score": 564.2971863010466,
+     "opp_score": 547.9549312723979,
+     "gap": -16.342255028648765
+    },
+    {
+     "episode": 87311071,
+     "opp_name": "William Catt",
+     "opp_final_rank": 3001,
+     "my_score": 556.698692581652,
+     "opp_score": 542.2792814045199,
+     "gap": -14.419411177132133
+    },
+    {
+     "episode": 87309449,
+     "opp_name": "G_nuoh",
+     "opp_final_rank": 2823,
+     "my_score": 613.6057963871252,
+     "opp_score": 600.2937071981175,
+     "gap": -13.31208918900768
+    },
+    {
+     "episode": 87321873,
+     "opp_name": "\u9f4b\u85e4\u58ee\u6c70",
+     "opp_final_rank": 3725,
+     "my_score": 536.2240060073924,
+     "opp_score": 523.7033880849744,
+     "gap": -12.520617922417955
+    }
+   ]
+  }
+ ],
+ "local_loss_tags": {
+  "greedy": {
+   "opponent": "greedy",
+   "seed": 20260722,
+   "fable_move_budget_s": 0.12,
+   "matches_played": 80,
+   "errors": 0,
+   "outcomes": {
+    "loss": 32,
+    "win": 48
+   },
+   "losses": 32,
+   "loss_by_tag": {
+    "board_wipe": 30,
+    "prize_race_lost": 2
+   },
+   "loss_by_tag_pct": {
+    "board_wipe": 93.8,
+    "prize_race_lost": 6.2
+   },
+   "generated_at": "2026-07-22T03:46:42Z"
+  }
+ }
+}

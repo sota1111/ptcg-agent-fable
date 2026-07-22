@@ -1,0 +1,745 @@
+{
+ "greedy": {
+  "opponent": "greedy",
+  "seed": 20260722,
+  "fable_move_budget_s": 0.12,
+  "matches_played": 80,
+  "errors": 0,
+  "outcomes": {
+   "loss": 32,
+   "win": 48
+  },
+  "losses": 32,
+  "loss_by_tag": {
+   "board_wipe": 30,
+   "prize_race_lost": 2
+  },
+  "loss_by_tag_pct": {
+   "board_wipe": 93.8,
+   "prize_race_lost": 6.2
+  },
+  "generated_at": "2026-07-22T03:46:42Z",
+  "rows": [
+   {
+    "match": 0,
+    "fable_seat": 0,
+    "winner_seat": 1,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 41
+   },
+   {
+    "match": 1,
+    "fable_seat": 1,
+    "winner_seat": 0,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 54
+   },
+   {
+    "match": 2,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 33
+   },
+   {
+    "match": 3,
+    "fable_seat": 1,
+    "winner_seat": 0,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 20
+   },
+   {
+    "match": 4,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 32
+   },
+   {
+    "match": 5,
+    "fable_seat": 1,
+    "winner_seat": 0,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 47
+   },
+   {
+    "match": 6,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 15
+   },
+   {
+    "match": 7,
+    "fable_seat": 1,
+    "winner_seat": 0,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 19
+   },
+   {
+    "match": 8,
+    "fable_seat": 0,
+    "winner_seat": 1,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 17
+   },
+   {
+    "match": 9,
+    "fable_seat": 1,
+    "winner_seat": 0,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 17
+   },
+   {
+    "match": 10,
+    "fable_seat": 0,
+    "winner_seat": 1,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 38
+   },
+   {
+    "match": 11,
+    "fable_seat": 1,
+    "winner_seat": 0,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 19
+   },
+   {
+    "match": 12,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 35
+   },
+   {
+    "match": 13,
+    "fable_seat": 1,
+    "winner_seat": 0,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 78
+   },
+   {
+    "match": 14,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 1,
+    "reason_tag": "prize_race_lost",
+    "steps": 87
+   },
+   {
+    "match": 15,
+    "fable_seat": 1,
+    "winner_seat": 1,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 52
+   },
+   {
+    "match": 16,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 19
+   },
+   {
+    "match": 17,
+    "fable_seat": 1,
+    "winner_seat": 0,
+    "outcome": "loss",
+    "reason_code": 1,
+    "reason_tag": "prize_race_lost",
+    "steps": 86
+   },
+   {
+    "match": 18,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 41
+   },
+   {
+    "match": 19,
+    "fable_seat": 1,
+    "winner_seat": 0,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 47
+   },
+   {
+    "match": 20,
+    "fable_seat": 0,
+    "winner_seat": 1,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 34
+   },
+   {
+    "match": 21,
+    "fable_seat": 1,
+    "winner_seat": 1,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 23
+   },
+   {
+    "match": 22,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 33
+   },
+   {
+    "match": 23,
+    "fable_seat": 1,
+    "winner_seat": 0,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 24
+   },
+   {
+    "match": 24,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 34
+   },
+   {
+    "match": 25,
+    "fable_seat": 1,
+    "winner_seat": 0,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 15
+   },
+   {
+    "match": 26,
+    "fable_seat": 0,
+    "winner_seat": 1,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 46
+   },
+   {
+    "match": 27,
+    "fable_seat": 1,
+    "winner_seat": 1,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 33
+   },
+   {
+    "match": 28,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 23
+   },
+   {
+    "match": 29,
+    "fable_seat": 1,
+    "winner_seat": 0,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 42
+   },
+   {
+    "match": 30,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 26
+   },
+   {
+    "match": 31,
+    "fable_seat": 1,
+    "winner_seat": 1,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 38
+   },
+   {
+    "match": 32,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 21
+   },
+   {
+    "match": 33,
+    "fable_seat": 1,
+    "winner_seat": 1,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 36
+   },
+   {
+    "match": 34,
+    "fable_seat": 0,
+    "winner_seat": 1,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 37
+   },
+   {
+    "match": 35,
+    "fable_seat": 1,
+    "winner_seat": 1,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 46
+   },
+   {
+    "match": 36,
+    "fable_seat": 0,
+    "winner_seat": 1,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 23
+   },
+   {
+    "match": 37,
+    "fable_seat": 1,
+    "winner_seat": 0,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 31
+   },
+   {
+    "match": 38,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 31
+   },
+   {
+    "match": 39,
+    "fable_seat": 1,
+    "winner_seat": 0,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 48
+   },
+   {
+    "match": 40,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 43
+   },
+   {
+    "match": 41,
+    "fable_seat": 1,
+    "winner_seat": 0,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 56
+   },
+   {
+    "match": 42,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 17
+   },
+   {
+    "match": 43,
+    "fable_seat": 1,
+    "winner_seat": 1,
+    "outcome": "win",
+    "reason_code": 1,
+    "reason_tag": "prize_race_lost",
+    "steps": 67
+   },
+   {
+    "match": 44,
+    "fable_seat": 0,
+    "winner_seat": 1,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 38
+   },
+   {
+    "match": 45,
+    "fable_seat": 1,
+    "winner_seat": 1,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 39
+   },
+   {
+    "match": 46,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 24
+   },
+   {
+    "match": 47,
+    "fable_seat": 1,
+    "winner_seat": 0,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 18
+   },
+   {
+    "match": 48,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 25
+   },
+   {
+    "match": 49,
+    "fable_seat": 1,
+    "winner_seat": 1,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 43
+   },
+   {
+    "match": 50,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 19
+   },
+   {
+    "match": 51,
+    "fable_seat": 1,
+    "winner_seat": 0,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 21
+   },
+   {
+    "match": 52,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 20
+   },
+   {
+    "match": 53,
+    "fable_seat": 1,
+    "winner_seat": 1,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 19
+   },
+   {
+    "match": 54,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 17
+   },
+   {
+    "match": 55,
+    "fable_seat": 1,
+    "winner_seat": 0,
+    "outcome": "loss",
+    "reason_code": 1,
+    "reason_tag": "prize_race_lost",
+    "steps": 69
+   },
+   {
+    "match": 56,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 22
+   },
+   {
+    "match": 57,
+    "fable_seat": 1,
+    "winner_seat": 0,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 17
+   },
+   {
+    "match": 58,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 29
+   },
+   {
+    "match": 59,
+    "fable_seat": 1,
+    "winner_seat": 1,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 45
+   },
+   {
+    "match": 60,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 54
+   },
+   {
+    "match": 61,
+    "fable_seat": 1,
+    "winner_seat": 1,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 34
+   },
+   {
+    "match": 62,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 18
+   },
+   {
+    "match": 63,
+    "fable_seat": 1,
+    "winner_seat": 0,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 16
+   },
+   {
+    "match": 64,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 35
+   },
+   {
+    "match": 65,
+    "fable_seat": 1,
+    "winner_seat": 1,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 31
+   },
+   {
+    "match": 66,
+    "fable_seat": 0,
+    "winner_seat": 1,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 37
+   },
+   {
+    "match": 67,
+    "fable_seat": 1,
+    "winner_seat": 0,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 25
+   },
+   {
+    "match": 68,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 31
+   },
+   {
+    "match": 69,
+    "fable_seat": 1,
+    "winner_seat": 1,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 26
+   },
+   {
+    "match": 70,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 30
+   },
+   {
+    "match": 71,
+    "fable_seat": 1,
+    "winner_seat": 0,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 29
+   },
+   {
+    "match": 72,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 41
+   },
+   {
+    "match": 73,
+    "fable_seat": 1,
+    "winner_seat": 1,
+    "outcome": "win",
+    "reason_code": 1,
+    "reason_tag": "prize_race_lost",
+    "steps": 68
+   },
+   {
+    "match": 74,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 43
+   },
+   {
+    "match": 75,
+    "fable_seat": 1,
+    "winner_seat": 1,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 56
+   },
+   {
+    "match": 76,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 17
+   },
+   {
+    "match": 77,
+    "fable_seat": 1,
+    "winner_seat": 0,
+    "outcome": "loss",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 44
+   },
+   {
+    "match": 78,
+    "fable_seat": 0,
+    "winner_seat": 0,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 21
+   },
+   {
+    "match": 79,
+    "fable_seat": 1,
+    "winner_seat": 1,
+    "outcome": "win",
+    "reason_code": 3,
+    "reason_tag": "board_wipe",
+    "steps": 23
+   }
+  ]
+ }
+}
