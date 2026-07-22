@@ -1,0 +1,5 @@
+# Regenerable / bulky caches (rebuild with kaggle_episodes.py):
+data/leaderboard.csv
+data/manifest.json
+# Committed evidence (do NOT ignore): data/episodes/*.json,
+# data/episode_summary.json, data/local_loss_tags.json
