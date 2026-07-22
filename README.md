@@ -138,6 +138,31 @@ layered fallbacks MCTS → Greedy → Rule → random-legal. `deck.csv` is the
 SOT-1794 measured selection (see above). v1 measurements:
 `docs/fable_v1_report.md` (aggregates in `docs/fable_v1/`).
 
+## Learned value net (SOT-1837, opt-in)
+
+A pure-Python (numpy-free, Kaggle-compatible) value network can replace the
+heuristic leaf evaluator, trained from self-play. It is **off by default** —
+the champion (`main.py` `FABLE_CONFIG`) is unchanged — and only activates when a
+bench/agent config sets `value_net=<weights.json>` on `MctsAgent`.
+
+```bash
+# self-play data -> train (--backend torch trains on GPU; python is stdlib-only)
+python3 train/gen_selfplay.py --n 250 --agent greedy --out train/data/selfplay.jsonl
+python3 train/train_value.py --data train/data/selfplay.jsonl \
+    --out train/weights/value.json --hidden 24 --epochs 60
+# A/B a mode vs champion (leaf-eval: rollout_turns=0; early-cutoff: rollout_turns=2)
+python3 eval/bench.py --agent-a mcts --agent-b mcts --n 40 \
+    --config-a '{"value_net":"train/weights/value.json","rollout_turns":0,"time_budget_s":0.12,...}' \
+    --config-b '{...FABLE_CONFIG at the same budget...}'
+```
+
+The exported weights reload byte-identically into the pure-Python inference path
+(`agents/value_net.py` / `agents/learned_value.py`); the trainer and
+`tests/test_learned_value.py` both assert this consistency. The SOT-1837 screen
+(greedy off-policy data) landed at champion parity for both integration modes →
+**not promoted**; see `docs/value_net_report.md` for the result and the
+on-policy + real-GPU next steps.
+
 ## Cross-repo battle (vs a sibling submission)
 
 ```bash

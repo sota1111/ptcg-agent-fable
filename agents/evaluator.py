@@ -111,10 +111,21 @@ class HeuristicEvaluator(Evaluator):
 
 def make_evaluator(spec, card_index=None) -> Evaluator:
     """Resolve an evaluator spec: an Evaluator instance passes through;
-    "heuristic"/None builds the default. Unknown specs raise (fable ships
-    no learned evaluators in SOT-1795)."""
+    "heuristic"/None builds the default heuristic.
+
+    Learned value nets (SOT-1837) are opt-in and load lazily so the champion
+    path (main.py) never imports the value-net modules:
+      - ``{"learned": "<weights.json>"}`` (or ``{"type": "learned",
+        "weights": "<path>"}``) loads a ``LearnedEvaluator`` from exported JSON.
+    Unknown specs raise."""
     if isinstance(spec, Evaluator):
         return spec
     if spec in (None, "heuristic"):
         return HeuristicEvaluator()
+    if isinstance(spec, dict):
+        path = spec.get("learned") or (
+            spec.get("weights") if spec.get("type") == "learned" else None)
+        if path:
+            from .learned_value import LearnedEvaluator
+            return LearnedEvaluator.from_path(path)
     raise ValueError(f"unknown evaluator spec: {spec!r}")
