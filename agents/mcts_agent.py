@@ -44,6 +44,12 @@ class MctsAgent(BaseAgent):
         eval_weights = config_overrides.pop("eval_weights", None)
         if eval_weights and evaluator is None:
             evaluator = HeuristicEvaluator(weights=eval_weights)
+        # SOT-1837: `value_net=<weights.json>` swaps in the learned leaf
+        # evaluator (opt-in; champion FABLE_CONFIG never sets it). It takes
+        # precedence over eval_weights — the value net owns leaf scoring.
+        value_net = config_overrides.pop("value_net", None)
+        if value_net:
+            evaluator = make_evaluator({"learned": value_net})
         self.config = config or PlannerConfig(**config_overrides)
         # Resolve the card master eagerly: the lazy singleton load would
         # otherwise land inside the first TIMED decision (budget criterion).
