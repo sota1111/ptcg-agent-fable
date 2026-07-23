@@ -163,6 +163,20 @@ The exported weights reload byte-identically into the pure-Python inference path
 **not promoted**; see `docs/value_net_report.md` for the result and the
 on-policy + real-GPU next steps.
 
+## Board-development eval terms (SOT-1863, opt-in)
+
+`HeuristicEvaluator` has two opt-in, default-OFF board-development weights aimed
+at fable's biggest local loss cluster, board wipe (盤面全滅): `bench_dev` /
+`bench_dev_cap` (a saturating bench-insurance bonus) and `evo_ready` (per
+evolved Pokémon). The champion (`FABLE_CONFIG`) sets neither, so its behaviour is
+unchanged. `eval/run_ab_vs_champion.sh` runs a candidate MCTS head-to-head
+against the champion MCTS (so the recorded `winrate_a` is the vs-champion win
+rate), and `analysis/local_loss_tags.py` takes a `FABLE_TAG_EVAL` JSON override
+to re-tag board_wipe share under a candidate config. The SOT-1863 screen→confirm
+(`bench_dev` best at 0.3/cap2) washed out on independent seeds (0.533 [0.431,
+0.629]) and did not lower board_wipe share → **not promoted**; see
+`docs/board_wipe_report.md`.
+
 ## Cross-repo battle (vs a sibling submission)
 
 ```bash

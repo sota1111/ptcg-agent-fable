@@ -38,6 +38,20 @@ DEFAULT_WEIGHTS = {
     # Apply preservation only while this many prizes remain. Near a win,
     # drawing for the finisher remains correctly valued.
     "deck_low_prize_gate": 0,
+    # Board-wipe countermeasure (SOT-1863). fable's biggest local loss cluster
+    # is board wipe (盤面全滅: no Pokémon left in the Active Spot — 93.8% of
+    # tagged losses, SOT-1835). Board wipe happens when the Active is KO'd and
+    # there is NO bench Pokémon to promote, so the direct lever is to value a
+    # populated bench as insurance. Both terms are opt-in (0 disables) and
+    # SATURATING — they front-load value on the first bench Pokémon (0->1
+    # bench prevents a wipe; 4->5 barely matters), unlike the uncapped
+    # `pokemon` term. The champion (main.py FABLE_CONFIG) leaves them 0.
+    "bench_dev": 0.0,     # bonus (>=0) per bench Pokémon, capped at bench_dev_cap
+    "bench_dev_cap": 0,   # bench Pokémon counted for bench_dev; 0 disables
+    # Evolution-readiness: reward evolved Pokémon in play (a non-empty
+    # preEvolution stack). An evolved line is a tougher, higher-HP body that
+    # resists the KO chain that ends in a wipe. Attribute-only (no card master).
+    "evo_ready": 0.0,     # bonus (>=0) per evolved Pokémon in play
     "scale": 0.6,         # logistic scale on the score difference
 }
 
@@ -84,8 +98,10 @@ class HeuristicEvaluator(Evaluator):
         hp_total = 0
         pokemon = 0
         energy = 0
+        evolved = 0
+        bench = list(getattr(p, "bench", None) or ())
         in_play = list(getattr(p, "active", None) or ())
-        in_play += list(getattr(p, "bench", None) or ())
+        in_play += bench
         for pk in in_play:
             if pk is None:  # facedown Pokémon: presence known, stats hidden
                 pokemon += 1
@@ -93,10 +109,19 @@ class HeuristicEvaluator(Evaluator):
             pokemon += 1
             hp_total += getattr(pk, "hp", 0) or 0
             energy += len(getattr(pk, "energies", None) or ())
+            if getattr(pk, "preEvolution", None):  # non-empty stack => evolved
+                evolved += 1
         score += w["pokemon"] * pokemon
         score += w["energy"] * energy
         score += w["hp"] * hp_total
         score += w["hand"] * (getattr(p, "handCount", 0) or 0)
+        # Board-wipe insurance (SOT-1863): saturating bench-development and
+        # evolution-readiness bonuses (both default 0 => champion unchanged).
+        cap = w.get("bench_dev_cap", 0) or 0
+        if cap:
+            score += w.get("bench_dev", 0.0) * min(len(bench), cap)
+        if w.get("evo_ready", 0.0):
+            score += w.get("evo_ready", 0.0) * evolved
         deck = getattr(p, "deckCount", 0) or 0
         if deck == 0:
             score += w["deck_empty"]
