@@ -177,6 +177,22 @@ to re-tag board_wipe share under a candidate config. The SOT-1863 screen→confi
 0.629]) and did not lower board_wipe share → **not promoted**; see
 `docs/board_wipe_report.md`.
 
+## Depth-search + progressive widening (SOT-1864, opt-in)
+
+`PlannerConfig` has an opt-in, default-OFF progressive widening (`pw_enabled`,
+`pw_c`, `pw_alpha`) that restricts a node to its top-prior `ceil(pw_c *
+(visits+1)**pw_alpha)` edges until it accrues visits, to make a deeper tree
+(`max_tree_depth>=2`) tractable inside the saturated ~600 iters/decision. The
+champion (`FABLE_CONFIG`) keeps `max_tree_depth=1` and never sets `pw_enabled`,
+so `_select_edge` is byte-identical to before. The SOT-1864 A/B (candidate vs
+champion MCTS at a shared 0.5s throttle) found depth2 statistically
+indistinguishable from the champion (confirm 0.467 [0.302, 0.639]; combined 50
+games 0.440 [0.309, 0.579]), while the PW overhead cut iterations and made
+depth2+PW / depth3+PW weaker → **not promoted**; champion unchanged. Investing
+the saturated iterations in depth did not transfer to strength (as SOT-1836
+found for raw iteration count), pointing the next lever at leaf-eval / rollout
+quality (SOT-1865), not search breadth/depth. See `docs/depth_search_report.md`.
+
 ## Cross-repo battle (vs a sibling submission)
 
 ```bash
