@@ -76,8 +76,12 @@ def run(n: int, mirror: bool, budget_s: float, seed: int,
     sys.path.insert(0, REPO)
     os.chdir(REPO)
     from cg import game
-    import main as M
+    # Import the repo `agents` package BEFORE `main`: main.py prepends
+    # /kaggle_simulations/agent to sys.path when that dir exists, so importing
+    # main first would resolve `from agents import ...` to a stale bundled copy.
+    # Warming the cache with the repo package here keeps main's import correct.
     from agents import GreedyAgent
+    import main as M
 
     # Throughput knob: cap fable's per-move MCTS budget so a single long game
     # cannot consume the whole wall-clock (the champion's own schedule already
@@ -88,6 +92,16 @@ def run(n: int, mirror: bool, budget_s: float, seed: int,
         M.FABLE_CONFIG = {**M.FABLE_CONFIG, "time_budget_s": fable_budget}
         M.BUDGET_SCHEDULE = ((300.0, fable_budget), (420.0, fable_budget / 2),
                              (510.0, fable_budget / 4))
+
+    # SOT-1863: FABLE_TAG_EVAL is a JSON delta merged onto the champion
+    # eval_weights so a candidate board-development config (bench_dev/evo_ready)
+    # can be re-tagged and its board_wipe share compared to the champion's.
+    eval_override = os.environ.get("FABLE_TAG_EVAL", "").strip()
+    if eval_override:
+        delta = json.loads(eval_override)
+        merged = {**M.FABLE_CONFIG.get("eval_weights", {}), **delta}
+        M.FABLE_CONFIG = {**M.FABLE_CONFIG, "eval_weights": merged}
+        print(f"  eval_weights override -> {merged}", flush=True)
 
     deck = M.read_deck_csv()
     play_match.decks = (deck, deck)

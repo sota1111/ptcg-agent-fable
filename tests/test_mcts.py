@@ -95,6 +95,44 @@ class TestHeuristicEvaluator(unittest.TestCase):
         obs = eval_obs(side(active=[None]), side())
         self.assertGreater(ev.evaluate(obs, 0), 0.5)
 
+    def _flat(self, **overrides):
+        w = {k: 0.0 for k in DEFAULT_WEIGHTS}
+        w["scale"] = 0.6
+        w.update(overrides)
+        return HeuristicEvaluator(w)
+
+    def test_bench_dev_rewards_a_populated_bench(self):
+        # SOT-1863 board-wipe insurance: with bench_dev on, the side holding a
+        # bench backup is favoured over an equal side with an empty bench
+        # (flat base isolates the bench term from hp/energy/pokemon).
+        ev = self._flat(bench_dev=0.3, bench_dev_cap=2)
+        obs = eval_obs(side(active=[mon()], bench=[mon(), mon()]),
+                       side(active=[mon()], bench=[]))
+        self.assertGreater(ev.evaluate(obs, 0), 0.5)
+        self.assertLess(ev.evaluate(obs, 1), 0.5)
+
+    def test_bench_dev_saturates_at_the_cap(self):
+        # Beyond bench_dev_cap extra bench Pokémon add no bench_dev value
+        # (front-loaded on the first backups that prevent a wipe).
+        ev = self._flat(bench_dev=0.3, bench_dev_cap=1)
+        capped = eval_obs(side(active=[mon()], bench=[mon(), mon(), mon()]),
+                          side(active=[mon()], bench=[mon()]))
+        self.assertAlmostEqual(ev.evaluate(capped, 0), 0.5)
+
+    def test_bench_dev_off_by_default(self):
+        # Champion default (bench_dev_cap=0) adds no bench term at all.
+        ev = self._flat(bench_dev=0.3, bench_dev_cap=0)
+        obs = eval_obs(side(active=[mon()], bench=[mon(), mon()]),
+                       side(active=[mon()], bench=[]))
+        self.assertAlmostEqual(ev.evaluate(obs, 0), 0.5)
+
+    def test_evo_ready_rewards_evolved_pokemon(self):
+        evolved = SimpleNamespace(hp=100, energies=[0], preEvolution=[{"id": 1}])
+        plain = SimpleNamespace(hp=100, energies=[0], preEvolution=[])
+        ev = self._flat(evo_ready=0.4)
+        obs = eval_obs(side(active=[evolved]), side(active=[plain]))
+        self.assertGreater(ev.evaluate(obs, 0), 0.5)
+
 
 class TestSampleFills(unittest.TestCase):
     DECK = [101] * 20 + [102] * 20 + [103] * 20
