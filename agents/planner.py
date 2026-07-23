@@ -87,6 +87,17 @@ class PlannerConfig:
     max_tree_depth: int = 4      # tree depth before switching to rollout
     max_root_actions: int = 12   # root candidate-action cap
     max_child_actions: int = 8   # in-tree candidate-action cap
+    # Progressive widening (SOT-1864). When ON, a node only *considers* its
+    # top-prior `ceil(pw_c * (node_visits+1)**pw_alpha)` edges for selection;
+    # the rest unlock as the node accrues visits. This is what makes a deeper
+    # tree (max_tree_depth>=2) tractable inside a fixed iteration budget:
+    # without it the branching factor (max_root_actions * max_child_actions)
+    # spreads the saturated ~600 iterations/decision (SOT-1836) too thin to
+    # read past the first ply. Default OFF => `_select_edge` is byte-identical
+    # to the champion's, so FABLE_CONFIG (depth1, pw_enabled unset) is unchanged.
+    pw_enabled: bool = False
+    pw_c: float = 1.0            # widening coefficient
+    pw_alpha: float = 0.5        # widening exponent (0<alpha<1)
     # Root-only self-deck-out guard (matsu SOT-1704). Zero disables it. At or
     # below the threshold, pure draw plays/abilities are removed before the
     # max_root_actions cap; lethal lines and an all-filtered fallback remain.
@@ -532,11 +543,27 @@ class MctsPlanner:
         world.iterations += 1
 
     def _select_edge(self, node, root_player):
-        c = self.config.uct_c
-        total = sum(e[2] for e in node.edges) + 1
+        cfg = self.config
+        c = cfg.uct_c
+        edges = node.edges
+        total = sum(e[2] for e in edges) + 1
+        # Progressive widening: restrict the selectable set to the top-prior
+        # `k` edges until the node earns more visits (SOT-1864). Disabled by
+        # default -> `considered` is every edge index, identical to before.
+        considered = range(len(edges))
+        if cfg.pw_enabled and len(edges) > 1:
+            visits = total - 1
+            k = max(1, math.ceil(cfg.pw_c * (visits + 1) ** cfg.pw_alpha))
+            if k < len(edges):
+                considered = sorted(
+                    range(len(edges)),
+                    key=lambda i: (node.priors[i] if i < len(node.priors)
+                                   else 0.0),
+                    reverse=True)[:k]
         sqrt_total = math.sqrt(total)
         best, best_key = None, None
-        for i, e in enumerate(node.edges):
+        for i in considered:
+            e = edges[i]
             q = (e[3] / e[2]) if e[2] else 0.5
             if node.actor != root_player:
                 q = 1.0 - q

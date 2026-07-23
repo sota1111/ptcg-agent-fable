@@ -452,6 +452,78 @@ class TestAgentSideReproducibility(unittest.TestCase):
                          [b.act(o) for o in obs_seq])
 
 
+class TestProgressiveWidening(unittest.TestCase):
+    """SOT-1864: progressive widening in _select_edge (opt-in, default OFF)."""
+
+    def _planner(self, **overrides):
+        return MctsPlanner(own_deck=[101] * 60,
+                           config=PlannerConfig(**overrides),
+                           backend=None, card_index=synthetic_card_index())
+
+    def test_disabled_by_default_keeps_champion_selection(self):
+        # PlannerConfig default must leave pw OFF so FABLE_CONFIG (which never
+        # sets pw_enabled) is byte-identical to the champion's search.
+        self.assertFalse(PlannerConfig().pw_enabled)
+        # Two explored edges; the lower-prior edge has a decisive Q lead, so
+        # PUCT (no widening) exploits it.
+        node = SimpleNamespace(
+            actor=0, priors=[0.6, 0.4],
+            edges=[[[0], None, 10, 1.0], [[1], None, 10, 9.0]])
+        best = self._planner()._select_edge(node, root_player=0)
+        self.assertEqual(best[0], [1])  # high-Q, lower-prior edge
+
+    def test_widening_blocks_low_prior_edges_until_visited(self):
+        # Same node, but widening capped to the single top-prior edge
+        # (k=ceil(0.2*sqrt(21))=1) hides the tempting low-prior edge entirely.
+        node = SimpleNamespace(
+            actor=0, priors=[0.6, 0.4],
+            edges=[[[0], None, 10, 1.0], [[1], None, 10, 9.0]])
+        best = self._planner(pw_enabled=True, pw_c=0.2, pw_alpha=0.5) \
+            ._select_edge(node, root_player=0)
+        self.assertEqual(best[0], [0])  # top-prior edge, low-prior one blocked
+
+    def test_widening_unlocks_more_edges_as_visits_grow(self):
+        # With enough node visits the cap exceeds the edge count, so the same
+        # node considers every edge again (k=ceil(1.0*sqrt(101))>2).
+        node = SimpleNamespace(
+            actor=0, priors=[0.6, 0.4],
+            edges=[[[0], None, 50, 5.0], [[1], None, 50, 45.0]])
+        best = self._planner(pw_enabled=True, pw_c=1.0, pw_alpha=0.5) \
+            ._select_edge(node, root_player=0)
+        self.assertEqual(best[0], [1])  # widened set includes the high-Q edge
+
+
+@unittest.skipUnless(HAS_ENGINE, "cabt engine (cg/) not available")
+class TestDeepSearchOnEngine(unittest.TestCase):
+    """SOT-1864: a depth>=2 + progressive-widening config plays a full engine
+    match with zero rejects/fallbacks (the acceptance 'fault 0' requirement)."""
+
+    DEEP_CFG = dict(n_worlds=2, max_iterations=40, time_budget_s=30.0,
+                    rollout_turns=1, rollout_depth=20, max_root_actions=4,
+                    max_child_actions=4, max_tree_depth=2,
+                    pw_enabled=True, pw_c=1.0, pw_alpha=0.5)
+
+    @staticmethod
+    def _deck():
+        with open(os.path.join(REPO, "deck.csv")) as f:
+            return [int(x) for x in f.read().split("\n")[:60]]
+
+    def test_depth2_widening_full_match_no_faults(self):
+        os.chdir(REPO)
+        from eval.bench import play_match
+        a = MctsAgent(seed=1, deck=self._deck(), **self.DEEP_CFG)
+        b = MctsAgent(seed=2, deck=self._deck(), **self.DEEP_CFG)
+        result, decisions, reject, exception = play_match(a, b)
+        self.assertIn(result, (0, 1, 2))
+        self.assertFalse(reject)
+        self.assertFalse(exception)
+        self.assertGreater(decisions, 0)
+        for agent in (a, b):
+            self.assertEqual(agent.fallback_count, 0)
+            self.assertEqual(agent.planner_fallbacks, 0)
+            self.assertEqual(agent.degraded_count, 0)
+
+
 @unittest.skipUnless(HAS_ENGINE, "cabt engine (cg/) not available")
 class TestMctsOnEngine(unittest.TestCase):
     """One full engine match with a fast search config (test-sized)."""
