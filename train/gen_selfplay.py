@@ -25,6 +25,7 @@ import argparse
 import json
 import os
 import sys
+import time
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, REPO)
@@ -87,18 +88,46 @@ def label_for(result: int, actor: int):
 
 
 def generate(agent_name: str, n: int, seed: int, deck_path: str,
-             stride: int, max_per_match: int, config=None):
+             stride: int, max_per_match: int, config=None,
+             n_shards: int = 1, shard_index: int = 0, time_limit_s: float = 0.0):
+    """Generate self-play samples.
+
+    Sharding (SOT-1865): with ``n_shards > 1`` this process only plays the
+    global match indices ``i`` where ``i % n_shards == shard_index``, keeping
+    the SAME base ``seed`` so each shard draws a DISJOINT subset of the run's
+    per-match agent seeds (shard k owns matches k, k+M, k+2M, …). The shards
+    partition the match space with no seed overlap, so their union is one
+    coherent length-``n`` dataset — this lets an expensive on-policy (MCTS)
+    generation be split across sequential/parallel processes within a per-run
+    wall-clock budget. Note: the cabt engine's board-shuffle RNG is NOT
+    externally seedable (same caveat as eval/bench.py), so the union is
+    equivalent in distribution and seed coverage but not bit-identical to a
+    single un-sharded run. ``time_limit_s > 0`` stops a shard early once that
+    many seconds of generation have elapsed (the "8h/日予算内に収める" cap),
+    recording how many of its assigned matches it actually completed.
+    """
     deck = load_deck(deck_path)
     base = Rng(seed)
     rows = []
     faults = 0
+    played = 0
+    assigned = 0
+    stopped_early = False
+    t0 = time.perf_counter()
     for i in range(n):
+        if n_shards > 1 and i % n_shards != shard_index:
+            continue
+        assigned += 1
+        if time_limit_s and (time.perf_counter() - t0) >= time_limit_s:
+            stopped_early = True
+            break
         seed_a = base.child(f"m{i}.a").seed
         seed_b = base.child(f"m{i}.b").seed
         a = make_agent(agent_name, seed=seed_a, deck=deck, **(config or {}))
         b = make_agent(agent_name, seed=seed_b, deck=deck, **(config or {}))
         p0, p1 = (a, b) if i % 2 == 0 else (b, a)
         samples, result = play_and_record(p0, p1, stride, max_per_match)
+        played += 1
         if result not in (0, 1, 2):
             faults += 1
             continue
@@ -106,9 +135,15 @@ def generate(agent_name: str, n: int, seed: int, deck_path: str,
             y = label_for(result, actor)
             if y is not None:
                 rows.append({"f": feats, "y": y})
-        if (i + 1) % 50 == 0:
-            print(f"  {i + 1}/{n} matches, {len(rows)} samples", flush=True)
-    return rows, faults
+        if played % 50 == 0:
+            print(f"  shard {shard_index}/{n_shards}: {played} matches played, "
+                  f"{len(rows)} samples, {time.perf_counter() - t0:.0f}s",
+                  flush=True)
+    gen_stats = {
+        "played": played, "assigned": assigned, "faults": faults,
+        "stopped_early": stopped_early, "gen_seconds": time.perf_counter() - t0,
+    }
+    return rows, faults, gen_stats
 
 
 def main():
@@ -121,25 +156,47 @@ def main():
                     help="record every k-th decision state")
     ap.add_argument("--max-per-match", type=int, default=40)
     ap.add_argument("--config", default=None, help="JSON agent kwargs")
+    ap.add_argument("--n-shards", type=int, default=1,
+                    help="split the global run into this many disjoint shards")
+    ap.add_argument("--shard-index", type=int, default=0,
+                    help="which shard (0..n_shards-1) THIS process plays")
+    ap.add_argument("--time-limit-s", type=float, default=0.0,
+                    help="stop this shard after this many wall-clock seconds "
+                         "(0 = no cap); records matches actually completed")
     ap.add_argument("--out", default="train/data/selfplay.jsonl")
     args = ap.parse_args()
 
+    if not (0 <= args.shard_index < max(1, args.n_shards)):
+        raise SystemExit(f"shard_index {args.shard_index} out of range for "
+                         f"n_shards {args.n_shards}")
+
     config = json.loads(args.config) if args.config else None
     print(f"GEN: agent={args.agent} n={args.n} seed={args.seed} "
-          f"stride={args.stride} config={config}", flush=True)
-    rows, faults = generate(args.agent, args.n, args.seed, args.deck,
-                            args.stride, args.max_per_match, config)
+          f"stride={args.stride} shard={args.shard_index}/{args.n_shards} "
+          f"time_limit_s={args.time_limit_s} config={config}", flush=True)
+    rows, faults, gs = generate(args.agent, args.n, args.seed, args.deck,
+                                args.stride, args.max_per_match, config,
+                                n_shards=args.n_shards,
+                                shard_index=args.shard_index,
+                                time_limit_s=args.time_limit_s)
     os.makedirs(os.path.dirname(os.path.abspath(args.out)), exist_ok=True)
     with open(args.out, "w") as f:
         f.write(json.dumps({"meta": {"feature_version": FEATURE_VERSION,
                                      "n_matches": args.n, "seed": args.seed,
-                                     "agent": args.agent, "faults": faults,
+                                     "agent": args.agent, "config": config,
+                                     "n_shards": args.n_shards,
+                                     "shard_index": args.shard_index,
+                                     "matches_played": gs["played"],
+                                     "stopped_early": gs["stopped_early"],
+                                     "gen_seconds": round(gs["gen_seconds"], 1),
+                                     "faults": faults,
                                      "samples": len(rows)}}) + "\n")
         for r in rows:
             f.write(json.dumps(r) + "\n")
     pos = sum(1 for r in rows if r["y"] == 1.0)
     print(f"wrote {len(rows)} samples ({pos} win / {len(rows) - pos} other), "
-          f"faults={faults} -> {args.out}")
+          f"faults={faults} matches_played={gs['played']} "
+          f"gen_seconds={gs['gen_seconds']:.0f} -> {args.out}")
 
 
 if __name__ == "__main__":
