@@ -121,10 +121,21 @@ def preferred_count(context, lo: int, hi: int, deck_count=None,
 
 
 class RulePolicy:
-    """Deterministic context-dispatched policy over fable's View."""
+    """Deterministic context-dispatched policy over fable's View.
 
-    def __init__(self, card_index=None):
-        self._greedy = GreedyAgent(seed=0, card_index=card_index)
+    `tactics=True` (SOT-1892, opt-in, default OFF) swaps the internal
+    scorer for the take-tactics-adjusted TacticalGreedyAgent and lets its
+    prize-trade promotion order (SOT-1730) replace the readiness override
+    on SWITCH/TO_ACTIVE — the fallback-layer injection point.
+    """
+
+    def __init__(self, card_index=None, tactics: bool = False):
+        if tactics:
+            from .take_tactics import TacticalGreedyAgent
+            self._greedy = TacticalGreedyAgent(seed=0, card_index=card_index)
+        else:
+            self._greedy = GreedyAgent(seed=0, card_index=card_index)
+        self._tactics = tactics
 
     @property
     def cards(self):
@@ -160,6 +171,10 @@ class RulePolicy:
             # Active must survive the opening race: HP first.
             return lambda i: self._option_card_hp(view, i)
         if context in (CTX_SWITCH, CTX_TO_ACTIVE):
+            if self._tactics:
+                # take prize-trade promotion (SOT-1730): the tactical
+                # greedy's score_options already carries it — no override.
+                return None
             # Promote the readiest Pokémon: attached Energy, then HP.
             return lambda i: self._option_readiness(view, i)
         if context in YES_CONTEXTS:
@@ -200,9 +215,10 @@ class RulePolicy:
 class RuleAgent(BaseAgent):
     """Rule-policy agent — fallback layer 3 and a bench contestant."""
 
-    def __init__(self, seed: int, deck=None, card_index=None):
+    def __init__(self, seed: int, deck=None, card_index=None,
+                 tactics: bool = False):
         super().__init__(seed, deck)
-        self._policy = RulePolicy(card_index=card_index)
+        self._policy = RulePolicy(card_index=card_index, tactics=tactics)
 
     def choose(self, view: View) -> list:
         return self._policy.choose(view)

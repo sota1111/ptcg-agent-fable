@@ -21,12 +21,14 @@ from .mcts_agent import MctsAgent
 from .random_agent import RandomAgent
 from .rng import Rng
 from .rule_policy import RuleAgent
+from .take_tactics import TacticalGreedyAgent
 
 AGENT_TYPES = {
     "random": RandomAgent,
     "greedy": GreedyAgent,
     "rule": RuleAgent,
     "mcts": MctsAgent,
+    "tactical-greedy": TacticalGreedyAgent,  # SOT-1892 take-tactics variant
 }
 
 

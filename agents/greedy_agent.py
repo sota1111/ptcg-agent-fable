@@ -131,7 +131,9 @@ class GreedyAgent(BaseAgent):
     def choose(self, view: View) -> list:
         sel = view.select
         lo, hi = actions.count_bounds(sel)
-        scores = [self._score_option(view, opt) for opt in sel.options]
+        # Via score_options so subclasses adjusting scores (take_tactics)
+        # steer choices too; for this class the two are identical.
+        scores = self.score_options(view)
         if lo == hi:
             k = lo
         elif sel.context in _COST_CONTEXTS:
