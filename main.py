@@ -65,6 +65,23 @@ BUDGET_SCHEDULE = (
     (510.0, 0.2),   # 420-510s: quarter budget
 )                   # >= 510s: Greedy handoff (no search)
 
+# take-tactics injection profile (SOT-1892, opt-in). FABLE_TACTICS is a
+# comma-separated subset of {prior, rollout, fallback} ("full" = all three);
+# unset/empty keeps the champion behaviour byte-identical. `prior`/`rollout`
+# flow into PlannerConfig (take_tactics.py bands inside the MCTS), `fallback`
+# swaps the Greedy/Rule fallback layers for their tactical variants.
+_TACTIC_TOKENS = frozenset({"prior", "rollout", "fallback"})
+
+
+def tactics_profile(raw=None) -> frozenset:
+    """Parse FABLE_TACTICS (or `raw`) into the enabled-injection set."""
+    if raw is None:
+        raw = os.environ.get("FABLE_TACTICS", "")
+    tokens = {t.strip().lower() for t in raw.split(",") if t.strip()}
+    if tokens & {"full", "all"}:
+        return _TACTIC_TOKENS
+    return frozenset(tokens & _TACTIC_TOKENS)
+
 
 class SubmissionAgent:
     """Submission wrapper: fable MCTS + time governor + layered fallbacks.
@@ -79,16 +96,28 @@ class SubmissionAgent:
     60-card deck.
     """
 
-    def __init__(self, seed, deck, clock=time.perf_counter, card_index=None):
+    def __init__(self, seed, deck, clock=time.perf_counter, card_index=None,
+                 tactics=frozenset()):
         self.seed = int(seed)
         self._deck = list(deck)
         self._clock = clock
+        config = dict(FABLE_CONFIG)
+        if "prior" in tactics:
+            config["tactics_prior"] = True
+        if "rollout" in tactics:
+            config["tactics_rollout"] = True
         self._mcts = MctsAgent(self.seed, deck=self._deck,
-                               card_index=card_index, **dict(FABLE_CONFIG))
-        self._greedy = GreedyAgent(seed=self.seed, deck=self._deck,
-                                   card_index=card_index)
+                               card_index=card_index, **config)
+        if "fallback" in tactics:
+            from agents.take_tactics import TacticalGreedyAgent
+            self._greedy = TacticalGreedyAgent(
+                seed=self.seed, deck=self._deck, card_index=card_index)
+        else:
+            self._greedy = GreedyAgent(seed=self.seed, deck=self._deck,
+                                       card_index=card_index)
         self._rule = RuleAgent(seed=self.seed, deck=self._deck,
-                               card_index=card_index)
+                               card_index=card_index,
+                               tactics="fallback" in tactics)
         self._rng = Rng(self.seed).child("submission-last-resort")
         self.think_time_s = 0.0   # cumulative act() wall-clock (time governor)
         self.move_times = []      # per-decision wall-clock (bench reporting)
@@ -217,5 +246,6 @@ def agent(obs_dict: dict) -> list:
     global _agent
     if _agent is None:
         seed = int(os.environ.get("AGENT_SEED", _DEFAULT_SEED))
-        _agent = SubmissionAgent(seed=seed, deck=read_deck_csv())
+        _agent = SubmissionAgent(seed=seed, deck=read_deck_csv(),
+                                 tactics=tactics_profile())
     return _agent.act(obs_dict)

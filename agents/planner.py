@@ -52,6 +52,7 @@ from .evaluator import HeuristicEvaluator
 from .greedy_agent import GreedyAgent, _COUNT_MAX_CONTEXTS, _YES_CONTEXTS
 from .observation import View, adapt_engine_obs
 from .rule_policy import preferred_count
+from .take_tactics import TacticalGreedyAgent
 
 # --- OptionType tiers for the lightweight rollout policy ---------------------
 # Mirrors cg/api.py:120-187 (values as plain ints, unknown values -> default).
@@ -118,6 +119,12 @@ class PlannerConfig:
     # pooled mean value beats the prior's by this margin (SOT-1672: ~0.1 was
     # the decisive setting, 0.577 -> 0.63).
     deviate_margin: float = 0.0
+    # take-tactics injection (SOT-1892), each independently opt-in. Default
+    # OFF => the champion's GreedyAgent scores everywhere, byte-identical
+    # behaviour. ON swaps in TacticalGreedyAgent (take_tactics.py) for the
+    # root action prior / the rollout policy respectively.
+    tactics_prior: bool = False
+    tactics_rollout: bool = False
 
 
 @dataclass
@@ -356,6 +363,17 @@ class MctsPlanner:
         self._card_index = card_index
         self._clock = clock
         self._greedy = GreedyAgent(seed=0, card_index=card_index)
+        # take-tactics injection points (SOT-1892): one shared tactical
+        # scorer serves whichever of prior/rollout is switched on; with both
+        # OFF (champion default) these are aliases of the plain greedy.
+        self._prior_agent = self._greedy
+        self._rollout_agent = self._greedy
+        if self.config.tactics_prior or self.config.tactics_rollout:
+            tactical = TacticalGreedyAgent(seed=0, card_index=card_index)
+            if self.config.tactics_prior:
+                self._prior_agent = tactical
+            if self.config.tactics_rollout:
+                self._rollout_agent = tactical
         self.degraded_count = 0   # decisions answered by the greedy prior
         self.last_stats = {}
 
@@ -431,7 +449,7 @@ class MctsPlanner:
         n = len(sel.options)
         if lo == hi and lo in (0, n):  # forced: empty or take-everything
             return [sorted(range(lo))] if lo == 0 else [list(range(n))], [1.0]
-        scores = self._greedy.score_options(view)
+        scores = self._prior_agent.score_options(view)
         order = sorted(range(n), key=lambda i: (-scores[i], i))
         if lo == hi == 1:
             order = self._guarded_root_order(view, order)
@@ -441,7 +459,7 @@ class MctsPlanner:
                              cfg.prior_temperature))
         # Count selection: greedy's own pick first, then extreme-count
         # top-score sets, then random legal samples for diversity.
-        cands = [tuple(sorted(self._greedy.choose(view)))]
+        cands = [tuple(sorted(self._prior_agent.choose(view)))]
         for k in (lo, hi):
             cands.append(tuple(sorted(order[:k])))
         attempts = 0
@@ -668,9 +686,10 @@ class MctsPlanner:
             # Full-strength GreedyAgent for BOTH sides (deterministic; only
             # coin outcomes above keep rollouts stochastic). adapt_engine_obs
             # builds the View straight from the engine's dataclass
-            # observation (SOT-1697 fast path).
+            # observation (SOT-1697 fast path). tactics_rollout swaps in the
+            # take-tactics-adjusted scorer (SOT-1892) for both sides.
             try:
-                return self._greedy.choose(adapt_engine_obs(obs))
+                return self._rollout_agent.choose(adapt_engine_obs(obs))
             except Exception:
                 pass  # non-dataclass double etc.: use the tier policy below
         scores = [self._tier_score(sel, opt, rng, obs) for opt in sel.option]
