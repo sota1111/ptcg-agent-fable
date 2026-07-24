@@ -1,0 +1,15 @@
+{
+ "checked_at": "2026-07-24T01:57:17Z",
+ "probe_episode_id": 86732867,
+ "rpc_GetEpisodeReplay": {
+  "url": "https://www.kaggle.com/api/i/competitions.EpisodeService/GetEpisodeReplay",
+  "status": 404
+ },
+ "public_endpoint": {
+  "url": "https://www.kaggleusercontent.com/episodes/86732867.json",
+  "status": 200,
+  "replay_ok": true,
+  "steps": 65
+ },
+ "replay_available": true
+}

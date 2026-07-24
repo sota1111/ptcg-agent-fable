@@ -1,0 +1,1215 @@
+{
+ "fetched_at": "2026-07-24T01:57:17Z",
+ "losses": [
+  {
+   "episode_id": 86732867,
+   "submission_id": 54811671,
+   "our_index": 1,
+   "our_rating": 623.5995490664236,
+   "opp_rating": 1099.8152825696532,
+   "opp_team_id": 16514212,
+   "end_time": "2026-07-18T18:03:35.912326500Z",
+   "replay_file": "data/replays/86732867.json"
+  },
+  {
+   "episode_id": 87057986,
+   "submission_id": 54811671,
+   "our_index": 1,
+   "our_rating": 543.9307983736076,
+   "opp_rating": 1034.6769554019897,
+   "opp_team_id": 16514272,
+   "end_time": "2026-07-20T09:56:01.760345400Z",
+   "replay_file": "data/replays/87057986.json"
+  },
+  {
+   "episode_id": 87393888,
+   "submission_id": 54883092,
+   "our_index": 0,
+   "our_rating": 551.2061475979452,
+   "opp_rating": 934.2066636690859,
+   "opp_team_id": 16421599,
+   "end_time": "2026-07-22T03:54:13.522533200Z",
+   "replay_file": "data/replays/87393888.json"
+  },
+  {
+   "episode_id": 87335968,
+   "submission_id": 54882738,
+   "our_index": 0,
+   "our_rating": 306.254476952047,
+   "opp_rating": 839.4243033476517,
+   "opp_team_id": 16378036,
+   "end_time": "2026-07-21T20:49:12.772264800Z",
+   "replay_file": "data/replays/87335968.json"
+  },
+  {
+   "episode_id": 87310646,
+   "submission_id": 54882738,
+   "our_index": 1,
+   "our_rating": 277.93833563249814,
+   "opp_rating": 836.3110014975418,
+   "opp_team_id": 16539371,
+   "end_time": "2026-07-21T17:28:00.248067600Z",
+   "replay_file": "data/replays/87310646.json"
+  },
+  {
+   "episode_id": 87614928,
+   "submission_id": 54921798,
+   "our_index": 0,
+   "our_rating": 743.8557109064873,
+   "opp_rating": 819.7733692458154,
+   "opp_team_id": 16375404,
+   "end_time": "2026-07-23T07:18:57.826167600Z",
+   "replay_file": "data/replays/87614928.json"
+  },
+  {
+   "episode_id": 86717639,
+   "submission_id": 54811671,
+   "our_index": 1,
+   "our_rating": 640.4912546799741,
+   "opp_rating": 806.2525121706548,
+   "opp_team_id": 16373720,
+   "end_time": "2026-07-18T16:19:43.490815100Z",
+   "replay_file": "data/replays/86717639.json"
+  },
+  {
+   "episode_id": 87282098,
+   "submission_id": 54811671,
+   "our_index": 1,
+   "our_rating": 561.8990924666136,
+   "opp_rating": 806.0634573480772,
+   "opp_team_id": 16383701,
+   "end_time": "2026-07-21T13:53:35.392282100Z",
+   "replay_file": "data/replays/87282098.json"
+  },
+  {
+   "episode_id": 87009796,
+   "submission_id": 54811671,
+   "our_index": 0,
+   "our_rating": 525.566166662895,
+   "opp_rating": 801.923756374418,
+   "opp_team_id": 16442835,
+   "end_time": "2026-07-20T03:59:51.714643Z",
+   "replay_file": "data/replays/87009796.json"
+  },
+  {
+   "episode_id": 86718174,
+   "submission_id": 54811671,
+   "our_index": 1,
+   "our_rating": 584.5901144950574,
+   "opp_rating": 782.6528171365104,
+   "opp_team_id": 16381274,
+   "end_time": "2026-07-18T16:23:23.066891800Z",
+   "replay_file": "data/replays/86718174.json"
+  },
+  {
+   "episode_id": 87620636,
+   "submission_id": 54921798,
+   "our_index": 1,
+   "our_rating": 654.5598349206322,
+   "opp_rating": 759.6709716366616,
+   "opp_team_id": 16378362,
+   "end_time": "2026-07-23T07:58:51.786651300Z",
+   "replay_file": "data/replays/87620636.json"
+  },
+  {
+   "episode_id": 87630699,
+   "submission_id": 54921798,
+   "our_index": 0,
+   "our_rating": 651.1663663708416,
+   "opp_rating": 745.3595776658099,
+   "opp_team_id": 16488385,
+   "end_time": "2026-07-23T09:15:10.064635Z",
+   "replay_file": "data/replays/87630699.json"
+  },
+  {
+   "episode_id": 86847319,
+   "submission_id": 54811671,
+   "our_index": 0,
+   "our_rating": 541.3514891433491,
+   "opp_rating": 742.6422583212216,
+   "opp_team_id": 16474590,
+   "end_time": "2026-07-19T07:52:04.881025400Z",
+   "replay_file": "data/replays/86847319.json"
+  },
+  {
+   "episode_id": 87310103,
+   "submission_id": 54882738,
+   "our_index": 0,
+   "our_rating": 281.13892321448446,
+   "opp_rating": 736.9852566975293,
+   "opp_team_id": 16446132,
+   "end_time": "2026-07-21T17:24:13.127780800Z",
+   "replay_file": "data/replays/87310103.json"
+  },
+  {
+   "episode_id": 87615485,
+   "submission_id": 54921798,
+   "our_index": 1,
+   "our_rating": 667.1530629810969,
+   "opp_rating": 734.9949424233546,
+   "opp_team_id": 16532696,
+   "end_time": "2026-07-23T07:23:14.328895700Z",
+   "replay_file": "data/replays/87615485.json"
+  },
+  {
+   "episode_id": 87477569,
+   "submission_id": 54904755,
+   "our_index": 0,
+   "our_rating": 575.1657517082396,
+   "opp_rating": 730.8002457469144,
+   "opp_team_id": 16375384,
+   "end_time": "2026-07-22T14:25:28.326339900Z",
+   "replay_file": "data/replays/87477569.json"
+  },
+  {
+   "episode_id": 87399702,
+   "submission_id": 54883092,
+   "our_index": 0,
+   "our_rating": 555.6445764793423,
+   "opp_rating": 728.3787512480511,
+   "opp_team_id": 16558193,
+   "end_time": "2026-07-22T04:37:37.008351400Z",
+   "replay_file": "data/replays/87399702.json"
+  },
+  {
+   "episode_id": 87476501,
+   "submission_id": 54904755,
+   "our_index": 1,
+   "our_rating": 746.9296802226689,
+   "opp_rating": 726.6995064696914,
+   "opp_team_id": 16388144,
+   "end_time": "2026-07-22T14:17:29.871759900Z",
+   "replay_file": "data/replays/87476501.json"
+  },
+  {
+   "episode_id": 86722480,
+   "submission_id": 54811671,
+   "our_index": 0,
+   "our_rating": 655.2329379536664,
+   "opp_rating": 715.0788695914531,
+   "opp_team_id": 16438242,
+   "end_time": "2026-07-18T16:55:31.817135300Z",
+   "replay_file": "data/replays/86722480.json"
+  },
+  {
+   "episode_id": 86728095,
+   "submission_id": 54811671,
+   "our_index": 1,
+   "our_rating": 653.7356524350523,
+   "opp_rating": 710.8424035009771,
+   "opp_team_id": 16442457,
+   "end_time": "2026-07-18T17:35:25.888113300Z",
+   "replay_file": "data/replays/86728095.json"
+  },
+  {
+   "episode_id": 87621493,
+   "submission_id": 54921798,
+   "our_index": 1,
+   "our_rating": 620.3442509432175,
+   "opp_rating": 707.5935807863809,
+   "opp_team_id": 16380547,
+   "end_time": "2026-07-23T08:07:16.033674900Z",
+   "replay_file": "data/replays/87621493.json"
+  },
+  {
+   "episode_id": 86723017,
+   "submission_id": 54811671,
+   "our_index": 0,
+   "our_rating": 633.2996516052359,
+   "opp_rating": 696.4848951507217,
+   "opp_team_id": 16375591,
+   "end_time": "2026-07-18T16:59:44.424978900Z",
+   "replay_file": "data/replays/86723017.json"
+  },
+  {
+   "episode_id": 86732778,
+   "submission_id": 54811671,
+   "our_index": 0,
+   "our_rating": 623.1137152967603,
+   "opp_rating": 693.5188780364572,
+   "opp_team_id": 16504383,
+   "end_time": "2026-07-18T18:03:44.239924700Z",
+   "replay_file": "data/replays/86732778.json"
+  },
+  {
+   "episode_id": 87631227,
+   "submission_id": 54921798,
+   "our_index": 0,
+   "our_rating": 644.8485781786109,
+   "opp_rating": 681.8736016980953,
+   "opp_team_id": 16402154,
+   "end_time": "2026-07-23T09:19:12.786605800Z",
+   "replay_file": "data/replays/87631227.json"
+  },
+  {
+   "episode_id": 86730823,
+   "submission_id": 54811671,
+   "our_index": 0,
+   "our_rating": 628.4411889579113,
+   "opp_rating": 680.9694443536027,
+   "opp_team_id": 16379784,
+   "end_time": "2026-07-18T17:51:39.529817500Z",
+   "replay_file": "data/replays/86730823.json"
+  },
+  {
+   "episode_id": 87269261,
+   "submission_id": 54811671,
+   "our_index": 1,
+   "our_rating": 567.6287308647874,
+   "opp_rating": 679.702288964437,
+   "opp_team_id": 16377073,
+   "end_time": "2026-07-21T12:16:12.969744900Z",
+   "replay_file": "data/replays/87269261.json"
+  },
+  {
+   "episode_id": 86731494,
+   "submission_id": 54811671,
+   "our_index": 0,
+   "our_rating": 619.3804057089567,
+   "opp_rating": 677.2582802310176,
+   "opp_team_id": 16381505,
+   "end_time": "2026-07-18T17:55:11.430984500Z",
+   "replay_file": "data/replays/86731494.json"
+  },
+  {
+   "episode_id": 87621018,
+   "submission_id": 54921798,
+   "our_index": 0,
+   "our_rating": 639.2855987471509,
+   "opp_rating": 675.8029351324151,
+   "opp_team_id": 16394106,
+   "end_time": "2026-07-23T08:02:46.544259700Z",
+   "replay_file": "data/replays/87621018.json"
+  },
+  {
+   "episode_id": 87490036,
+   "submission_id": 54904755,
+   "our_index": 1,
+   "our_rating": 569.7406859268159,
+   "opp_rating": 674.0271828369315,
+   "opp_team_id": 16471923,
+   "end_time": "2026-07-22T15:57:23.526904700Z",
+   "replay_file": "data/replays/87490036.json"
+  },
+  {
+   "episode_id": 86729423,
+   "submission_id": 54811671,
+   "our_index": 0,
+   "our_rating": 656.4786344883784,
+   "opp_rating": 669.918551982593,
+   "opp_team_id": 16385517,
+   "end_time": "2026-07-18T17:43:40.519063500Z",
+   "replay_file": "data/replays/86729423.json"
+  },
+  {
+   "episode_id": 87630159,
+   "submission_id": 54921798,
+   "our_index": 0,
+   "our_rating": 660.4557440526697,
+   "opp_rating": 667.5509828992781,
+   "opp_team_id": 16412229,
+   "end_time": "2026-07-23T09:11:19.827515600Z",
+   "replay_file": "data/replays/87630159.json"
+  },
+  {
+   "episode_id": 86732879,
+   "submission_id": 54811671,
+   "our_index": 1,
+   "our_rating": 632.4287372999165,
+   "opp_rating": 667.0530210113905,
+   "opp_team_id": 16380893,
+   "end_time": "2026-07-18T18:03:29.363746Z",
+   "replay_file": "data/replays/86732879.json"
+  },
+  {
+   "episode_id": 87626388,
+   "submission_id": 54921798,
+   "our_index": 0,
+   "our_rating": 604.5221389393032,
+   "opp_rating": 663.9747135432899,
+   "opp_team_id": 16452464,
+   "end_time": "2026-07-23T08:43:14.039073500Z",
+   "replay_file": "data/replays/87626388.json"
+  },
+  {
+   "episode_id": 87341004,
+   "submission_id": 54883092,
+   "our_index": 1,
+   "our_rating": 565.6021893914668,
+   "opp_rating": 661.7822698526656,
+   "opp_team_id": 16380371,
+   "end_time": "2026-07-21T21:27:53.925118800Z",
+   "replay_file": "data/replays/87341004.json"
+  },
+  {
+   "episode_id": 87273371,
+   "submission_id": 54811671,
+   "our_index": 0,
+   "our_rating": 564.8182786123788,
+   "opp_rating": 656.3788924774201,
+   "opp_team_id": 16380674,
+   "end_time": "2026-07-21T12:47:57.695658Z",
+   "replay_file": "data/replays/87273371.json"
+  },
+  {
+   "episode_id": 87624802,
+   "submission_id": 54921798,
+   "our_index": 0,
+   "our_rating": 615.0173787696524,
+   "opp_rating": 653.6341810081757,
+   "opp_team_id": 16561197,
+   "end_time": "2026-07-23T08:31:02.482547500Z",
+   "replay_file": "data/replays/87624802.json"
+  },
+  {
+   "episode_id": 86725257,
+   "submission_id": 54811671,
+   "our_index": 1,
+   "our_rating": 625.6912853564081,
+   "opp_rating": 653.4580207852185,
+   "opp_team_id": 16411115,
+   "end_time": "2026-07-18T17:15:31.478595100Z",
+   "replay_file": "data/replays/86725257.json"
+  },
+  {
+   "episode_id": 87625901,
+   "submission_id": 54921798,
+   "our_index": 0,
+   "our_rating": 615.9527039205861,
+   "opp_rating": 651.6148006083702,
+   "opp_team_id": 16382331,
+   "end_time": "2026-07-23T08:39:00.696134800Z",
+   "replay_file": "data/replays/87625901.json"
+  },
+  {
+   "episode_id": 87631771,
+   "submission_id": 54921798,
+   "our_index": 1,
+   "our_rating": 637.0465159595329,
+   "opp_rating": 650.6940946484491,
+   "opp_team_id": 16381745,
+   "end_time": "2026-07-23T09:23:01.863061600Z",
+   "replay_file": "data/replays/87631771.json"
+  },
+  {
+   "episode_id": 87488430,
+   "submission_id": 54904755,
+   "our_index": 0,
+   "our_rating": 577.6135652186487,
+   "opp_rating": 649.6294358410942,
+   "opp_team_id": 16382598,
+   "end_time": "2026-07-22T15:45:32.616927700Z",
+   "replay_file": "data/replays/87488430.json"
+  },
+  {
+   "episode_id": 87632850,
+   "submission_id": 54921798,
+   "our_index": 1,
+   "our_rating": 618.5766818573715,
+   "opp_rating": 644.5764963313378,
+   "opp_team_id": 16580016,
+   "end_time": "2026-07-23T09:30:45.613229200Z",
+   "replay_file": "data/replays/87632850.json"
+  },
+  {
+   "episode_id": 87310533,
+   "submission_id": 54883092,
+   "our_index": 1,
+   "our_rating": 611.7051758544042,
+   "opp_rating": 642.3353811794876,
+   "opp_team_id": 16398940,
+   "end_time": "2026-07-21T17:28:12.183956300Z",
+   "replay_file": "data/replays/87310533.json"
+  },
+  {
+   "episode_id": 87324511,
+   "submission_id": 54883092,
+   "our_index": 0,
+   "our_rating": 563.2542124085742,
+   "opp_rating": 641.151395090681,
+   "opp_team_id": 16392227,
+   "end_time": "2026-07-21T19:18:25.823606300Z",
+   "replay_file": "data/replays/87324511.json"
+  },
+  {
+   "episode_id": 87283100,
+   "submission_id": 54811671,
+   "our_index": 1,
+   "our_rating": 560.5142077397059,
+   "opp_rating": 640.6230562335659,
+   "opp_team_id": 16501246,
+   "end_time": "2026-07-21T14:00:31.501398300Z",
+   "replay_file": "data/replays/87283100.json"
+  },
+  {
+   "episode_id": 87313255,
+   "submission_id": 54883092,
+   "our_index": 0,
+   "our_rating": 621.9679793488979,
+   "opp_rating": 639.0161795556662,
+   "opp_team_id": 16373853,
+   "end_time": "2026-07-21T17:51:12.639092300Z",
+   "replay_file": "data/replays/87313255.json"
+  },
+  {
+   "episode_id": 87648680,
+   "submission_id": 54921798,
+   "our_index": 1,
+   "our_rating": 602.9237600900253,
+   "opp_rating": 638.8371206648404,
+   "opp_team_id": 16426844,
+   "end_time": "2026-07-23T11:31:05.514219200Z",
+   "replay_file": "data/replays/87648680.json"
+  },
+  {
+   "episode_id": 86734114,
+   "submission_id": 54811671,
+   "our_index": 0,
+   "our_rating": 606.3339502180597,
+   "opp_rating": 636.8704206879138,
+   "opp_team_id": 16428287,
+   "end_time": "2026-07-18T18:11:23.649013800Z",
+   "replay_file": "data/replays/86734114.json"
+  },
+  {
+   "episode_id": 87619365,
+   "submission_id": 54921798,
+   "our_index": 0,
+   "our_rating": 619.3615055152301,
+   "opp_rating": 636.6260068989744,
+   "opp_team_id": 16395486,
+   "end_time": "2026-07-23T07:50:52.279838300Z",
+   "replay_file": "data/replays/87619365.json"
+  },
+  {
+   "episode_id": 86719796,
+   "submission_id": 54811671,
+   "our_index": 0,
+   "our_rating": 651.0941965758574,
+   "opp_rating": 635.5795540013086,
+   "opp_team_id": 16375215,
+   "end_time": "2026-07-18T16:35:47.924995300Z",
+   "replay_file": "data/replays/86719796.json"
+  },
+  {
+   "episode_id": 87358116,
+   "submission_id": 54883092,
+   "our_index": 1,
+   "our_rating": 550.4311331279036,
+   "opp_rating": 633.7248661220967,
+   "opp_team_id": 16378130,
+   "end_time": "2026-07-21T23:22:39.627428200Z",
+   "replay_file": "data/replays/87358116.json"
+  },
+  {
+   "episode_id": 86755850,
+   "submission_id": 54811671,
+   "our_index": 0,
+   "our_rating": 571.8514084902861,
+   "opp_rating": 626.1674388731694,
+   "opp_team_id": 16469075,
+   "end_time": "2026-07-18T20:47:40.793935Z",
+   "replay_file": "data/replays/86755850.json"
+  },
+  {
+   "episode_id": 87332652,
+   "submission_id": 54883092,
+   "our_index": 1,
+   "our_rating": 562.815654351149,
+   "opp_rating": 624.0276269016098,
+   "opp_team_id": 16424460,
+   "end_time": "2026-07-21T20:25:26.178766200Z",
+   "replay_file": "data/replays/87332652.json"
+  },
+  {
+   "episode_id": 87485720,
+   "submission_id": 54904755,
+   "our_index": 1,
+   "our_rating": 568.9798265981428,
+   "opp_rating": 618.7438313061891,
+   "opp_team_id": 16557372,
+   "end_time": "2026-07-22T15:25:27.018979700Z",
+   "replay_file": "data/replays/87485720.json"
+  },
+  {
+   "episode_id": 87218642,
+   "submission_id": 54811671,
+   "our_index": 1,
+   "our_rating": 564.69862453538,
+   "opp_rating": 618.5897642324253,
+   "opp_team_id": 16481113,
+   "end_time": "2026-07-21T05:56:03.928340500Z",
+   "replay_file": "data/replays/87218642.json"
+  },
+  {
+   "episode_id": 87485172,
+   "submission_id": 54904755,
+   "our_index": 1,
+   "our_rating": 582.5246374181289,
+   "opp_rating": 616.7850234128259,
+   "opp_team_id": 16422267,
+   "end_time": "2026-07-22T15:21:37.554690500Z",
+   "replay_file": "data/replays/87485172.json"
+  },
+  {
+   "episode_id": 87320812,
+   "submission_id": 54883092,
+   "our_index": 0,
+   "our_rating": 533.1863219135545,
+   "opp_rating": 616.7459297340904,
+   "opp_team_id": 16383808,
+   "end_time": "2026-07-21T18:50:26.342854900Z",
+   "replay_file": "data/replays/87320812.json"
+  },
+  {
+   "episode_id": 86733449,
+   "submission_id": 54811671,
+   "our_index": 0,
+   "our_rating": 615.7595642544193,
+   "opp_rating": 614.3837068792468,
+   "opp_team_id": 16376175,
+   "end_time": "2026-07-18T18:07:15.421899900Z",
+   "replay_file": "data/replays/86733449.json"
+  },
+  {
+   "episode_id": 87478115,
+   "submission_id": 54904755,
+   "our_index": 1,
+   "our_rating": 540.2994888166007,
+   "opp_rating": 613.6154067048536,
+   "opp_team_id": 16376775,
+   "end_time": "2026-07-22T14:29:26.315650100Z",
+   "replay_file": "data/replays/87478115.json"
+  },
+  {
+   "episode_id": 87477035,
+   "submission_id": 54904755,
+   "our_index": 0,
+   "our_rating": 658.2082189368435,
+   "opp_rating": 610.7466171985926,
+   "opp_team_id": 16394302,
+   "end_time": "2026-07-22T14:21:26.463969100Z",
+   "replay_file": "data/replays/87477035.json"
+  },
+  {
+   "episode_id": 86734740,
+   "submission_id": 54811671,
+   "our_index": 1,
+   "our_rating": 598.2415010145709,
+   "opp_rating": 609.7707668959165,
+   "opp_team_id": 16378569,
+   "end_time": "2026-07-18T18:15:12.367763600Z",
+   "replay_file": "data/replays/86734740.json"
+  },
+  {
+   "episode_id": 86735407,
+   "submission_id": 54811671,
+   "our_index": 1,
+   "our_rating": 589.8115861262712,
+   "opp_rating": 609.1847818071434,
+   "opp_team_id": 16381567,
+   "end_time": "2026-07-18T18:20:10.826647100Z",
+   "replay_file": "data/replays/86735407.json"
+  },
+  {
+   "episode_id": 87313805,
+   "submission_id": 54883092,
+   "our_index": 0,
+   "our_rating": 593.6072315802356,
+   "opp_rating": 605.6009743523535,
+   "opp_team_id": 16372376,
+   "end_time": "2026-07-21T17:58:35.154367400Z",
+   "replay_file": "data/replays/87313805.json"
+  },
+  {
+   "episode_id": 87150560,
+   "submission_id": 54811671,
+   "our_index": 1,
+   "our_rating": 554.7200372718921,
+   "opp_rating": 601.0251062785526,
+   "opp_team_id": 16449943,
+   "end_time": "2026-07-20T21:29:00.918013200Z",
+   "replay_file": "data/replays/87150560.json"
+  },
+  {
+   "episode_id": 87622588,
+   "submission_id": 54921798,
+   "our_index": 0,
+   "our_rating": 622.8109508348015,
+   "opp_rating": 600.9140037568188,
+   "opp_team_id": 16385539,
+   "end_time": "2026-07-23T08:14:50.625224300Z",
+   "replay_file": "data/replays/87622588.json"
+  },
+  {
+   "episode_id": 87638713,
+   "submission_id": 54921798,
+   "our_index": 0,
+   "our_rating": 611.1635628944721,
+   "opp_rating": 600.8327608942933,
+   "opp_team_id": 16389625,
+   "end_time": "2026-07-23T10:15:06.151951Z",
+   "replay_file": "data/replays/87638713.json"
+  },
+  {
+   "episode_id": 87309449,
+   "submission_id": 54883092,
+   "our_index": 1,
+   "our_rating": 613.6057963871252,
+   "opp_rating": 600.2937071981175,
+   "opp_team_id": 16411115,
+   "end_time": "2026-07-21T17:20:07.430029800Z",
+   "replay_file": "data/replays/87309449.json"
+  },
+  {
+   "episode_id": 86762772,
+   "submission_id": 54811671,
+   "our_index": 0,
+   "our_rating": 566.1424444457417,
+   "opp_rating": 600,
+   "opp_team_id": 16514272,
+   "end_time": "2026-07-18T21:40:02.021629700Z",
+   "replay_file": "data/replays/86762772.json"
+  },
+  {
+   "episode_id": 87314261,
+   "submission_id": 54883092,
+   "our_index": 1,
+   "our_rating": 567.4062511073619,
+   "opp_rating": 600,
+   "opp_team_id": 16569983,
+   "end_time": "2026-07-21T18:02:33.999539Z",
+   "replay_file": "data/replays/87314261.json"
+  },
+  {
+   "episode_id": 87623156,
+   "submission_id": 54921798,
+   "our_index": 0,
+   "our_rating": 603.3677103864181,
+   "opp_rating": 588.3204570830649,
+   "opp_team_id": 16375476,
+   "end_time": "2026-07-23T08:18:51.097073100Z",
+   "replay_file": "data/replays/87623156.json"
+  },
+  {
+   "episode_id": 87481909,
+   "submission_id": 54904755,
+   "our_index": 0,
+   "our_rating": 543.0701486960105,
+   "opp_rating": 586.7548845930711,
+   "opp_team_id": 16371449,
+   "end_time": "2026-07-22T14:58:18.843990500Z",
+   "replay_file": "data/replays/87481909.json"
+  },
+  {
+   "episode_id": 86725692,
+   "submission_id": 54811671,
+   "our_index": 0,
+   "our_rating": 608.9316674001792,
+   "opp_rating": 585.228466817693,
+   "opp_team_id": 16408160,
+   "end_time": "2026-07-18T17:19:12.525950800Z",
+   "replay_file": "data/replays/86725692.json"
+  },
+  {
+   "episode_id": 86935679,
+   "submission_id": 54811671,
+   "our_index": 1,
+   "our_rating": 539.8560804310238,
+   "opp_rating": 583.0715325192106,
+   "opp_team_id": 16380661,
+   "end_time": "2026-07-19T18:43:47.102953100Z",
+   "replay_file": "data/replays/86935679.json"
+  },
+  {
+   "episode_id": 86794667,
+   "submission_id": 54811671,
+   "our_index": 0,
+   "our_rating": 553.942933000096,
+   "opp_rating": 582.8931771076471,
+   "opp_team_id": 16440959,
+   "end_time": "2026-07-19T01:23:29.441235500Z",
+   "replay_file": "data/replays/86794667.json"
+  },
+  {
+   "episode_id": 87319201,
+   "submission_id": 54883092,
+   "our_index": 0,
+   "our_rating": 536.6975913854003,
+   "opp_rating": 579.9563532505903,
+   "opp_team_id": 16535742,
+   "end_time": "2026-07-21T18:38:34.218527500Z",
+   "replay_file": "data/replays/87319201.json"
+  },
+  {
+   "episode_id": 87616047,
+   "submission_id": 54921798,
+   "our_index": 0,
+   "our_rating": 598.8327775066152,
+   "opp_rating": 578.4236007396587,
+   "opp_team_id": 16373209,
+   "end_time": "2026-07-23T07:26:56.362968200Z",
+   "replay_file": "data/replays/87616047.json"
+  },
+  {
+   "episode_id": 87480283,
+   "submission_id": 54904755,
+   "our_index": 0,
+   "our_rating": 518.9579167347983,
+   "opp_rating": 577.9677187627268,
+   "opp_team_id": 16389834,
+   "end_time": "2026-07-22T14:45:35.632021500Z",
+   "replay_file": "data/replays/87480283.json"
+  },
+  {
+   "episode_id": 87318670,
+   "submission_id": 54883092,
+   "our_index": 0,
+   "our_rating": 550.5975152486668,
+   "opp_rating": 574.8784490860838,
+   "opp_team_id": 16391863,
+   "end_time": "2026-07-21T18:35:01.073921300Z",
+   "replay_file": "data/replays/87318670.json"
+  },
+  {
+   "episode_id": 87632305,
+   "submission_id": 54921798,
+   "our_index": 1,
+   "our_rating": 628.7713457848628,
+   "opp_rating": 573.540488212223,
+   "opp_team_id": 16386375,
+   "end_time": "2026-07-23T09:27:12.042890900Z",
+   "replay_file": "data/replays/87632305.json"
+  },
+  {
+   "episode_id": 87308395,
+   "submission_id": 54883092,
+   "our_index": 1,
+   "our_rating": 600,
+   "opp_rating": 572.4007161656124,
+   "opp_team_id": 16426854,
+   "end_time": "2026-07-21T17:12:16.077822700Z",
+   "replay_file": "data/replays/87308395.json"
+  },
+  {
+   "episode_id": 86877552,
+   "submission_id": 54811671,
+   "our_index": 1,
+   "our_rating": 546.1319312712317,
+   "opp_rating": 572.1412526424562,
+   "opp_team_id": 16422377,
+   "end_time": "2026-07-19T11:35:43.538459200Z",
+   "replay_file": "data/replays/86877552.json"
+  },
+  {
+   "episode_id": 86828047,
+   "submission_id": 54811671,
+   "our_index": 0,
+   "our_rating": 547.2683363838229,
+   "opp_rating": 571.4516013429896,
+   "opp_team_id": 16373169,
+   "end_time": "2026-07-19T05:31:23.905452800Z",
+   "replay_file": "data/replays/86828047.json"
+  },
+  {
+   "episode_id": 86982199,
+   "submission_id": 54811671,
+   "our_index": 0,
+   "our_rating": 530.256391322601,
+   "opp_rating": 570.1297754033869,
+   "opp_team_id": 16416539,
+   "end_time": "2026-07-20T00:36:23.927642900Z",
+   "replay_file": "data/replays/86982199.json"
+  },
+  {
+   "episode_id": 87661357,
+   "submission_id": 54921798,
+   "our_index": 0,
+   "our_rating": 596.2085604644262,
+   "opp_rating": 569.6604076430134,
+   "opp_team_id": 16484524,
+   "end_time": "2026-07-23T13:06:53.262487700Z",
+   "replay_file": "data/replays/87661357.json"
+  },
+  {
+   "episode_id": 86775948,
+   "submission_id": 54811671,
+   "our_index": 1,
+   "our_rating": 561.1088818283454,
+   "opp_rating": 566.9771946028416,
+   "opp_team_id": 16400151,
+   "end_time": "2026-07-18T23:11:09.266460100Z",
+   "replay_file": "data/replays/86775948.json"
+  },
+  {
+   "episode_id": 86736159,
+   "submission_id": 54811671,
+   "our_index": 1,
+   "our_rating": 581.8749438336639,
+   "opp_rating": 563.017191359534,
+   "opp_team_id": 16378846,
+   "end_time": "2026-07-18T18:23:14.835955700Z",
+   "replay_file": "data/replays/86736159.json"
+  },
+  {
+   "episode_id": 87319774,
+   "submission_id": 54883092,
+   "our_index": 0,
+   "our_rating": 536.626500439404,
+   "opp_rating": 562.9773563488943,
+   "opp_team_id": 16488544,
+   "end_time": "2026-07-21T18:42:42.958133Z",
+   "replay_file": "data/replays/87319774.json"
+  },
+  {
+   "episode_id": 86742725,
+   "submission_id": 54811671,
+   "our_index": 1,
+   "our_rating": 573.0253893047319,
+   "opp_rating": 553.8822769915434,
+   "opp_team_id": 16386410,
+   "end_time": "2026-07-18T19:07:46.525830800Z",
+   "replay_file": "data/replays/86742725.json"
+  },
+  {
+   "episode_id": 87418411,
+   "submission_id": 54883092,
+   "our_index": 1,
+   "our_rating": 552.5086329704209,
+   "opp_rating": 551.9161125551985,
+   "opp_team_id": 16516294,
+   "end_time": "2026-07-22T06:58:05.241798900Z",
+   "replay_file": "data/replays/87418411.json"
+  },
+  {
+   "episode_id": 86721412,
+   "submission_id": 54811671,
+   "our_index": 1,
+   "our_rating": 663.5819043336736,
+   "opp_rating": 551.0579189918136,
+   "opp_team_id": 16400525,
+   "end_time": "2026-07-18T16:47:31.229368Z",
+   "replay_file": "data/replays/86721412.json"
+  },
+  {
+   "episode_id": 86730113,
+   "submission_id": 54811671,
+   "our_index": 0,
+   "our_rating": 644.6841152776949,
+   "opp_rating": 548.3173091859122,
+   "opp_team_id": 16405188,
+   "end_time": "2026-07-18T17:47:29.330224300Z",
+   "replay_file": "data/replays/86730113.json"
+  },
+  {
+   "episode_id": 87315967,
+   "submission_id": 54883092,
+   "our_index": 0,
+   "our_rating": 564.2971863010466,
+   "opp_rating": 547.9549312723979,
+   "opp_team_id": 16383032,
+   "end_time": "2026-07-21T18:17:26.978072500Z",
+   "replay_file": "data/replays/87315967.json"
+  },
+  {
+   "episode_id": 87311071,
+   "submission_id": 54883092,
+   "our_index": 1,
+   "our_rating": 556.698692581652,
+   "opp_rating": 542.2792814045199,
+   "opp_team_id": 16471075,
+   "end_time": "2026-07-21T17:32:29.129403800Z",
+   "replay_file": "data/replays/87311071.json"
+  },
+  {
+   "episode_id": 87616606,
+   "submission_id": 54921798,
+   "our_index": 0,
+   "our_rating": 521.9327728639382,
+   "opp_rating": 542.072780804637,
+   "opp_team_id": 16390577,
+   "end_time": "2026-07-23T07:30:56.875595800Z",
+   "replay_file": "data/replays/87616606.json"
+  },
+  {
+   "episode_id": 86724621,
+   "submission_id": 54811671,
+   "our_index": 0,
+   "our_rating": 655.1922435442474,
+   "opp_rating": 531.5951400574555,
+   "opp_team_id": 16387568,
+   "end_time": "2026-07-18T17:11:29.725556400Z",
+   "replay_file": "data/replays/86724621.json"
+  },
+  {
+   "episode_id": 87489494,
+   "submission_id": 54904755,
+   "our_index": 1,
+   "our_rating": 582.617780775963,
+   "opp_rating": 527.5363642544812,
+   "opp_team_id": 16560869,
+   "end_time": "2026-07-22T15:53:24.136756600Z",
+   "replay_file": "data/replays/87489494.json"
+  },
+  {
+   "episode_id": 86971602,
+   "submission_id": 54811671,
+   "our_index": 1,
+   "our_rating": 536.0019220174057,
+   "opp_rating": 525.8202475757579,
+   "opp_team_id": 16400950,
+   "end_time": "2026-07-19T23:15:32.824986900Z",
+   "replay_file": "data/replays/86971602.json"
+  },
+  {
+   "episode_id": 86815053,
+   "submission_id": 54811671,
+   "our_index": 1,
+   "our_rating": 554.4851833707564,
+   "opp_rating": 523.9676120648736,
+   "opp_team_id": 16374247,
+   "end_time": "2026-07-19T03:55:31.200020Z",
+   "replay_file": "data/replays/86815053.json"
+  },
+  {
+   "episode_id": 87321873,
+   "submission_id": 54883092,
+   "our_index": 1,
+   "our_rating": 536.2240060073924,
+   "opp_rating": 523.7033880849744,
+   "opp_team_id": 16377372,
+   "end_time": "2026-07-21T18:58:52.100310900Z",
+   "replay_file": "data/replays/87321873.json"
+  },
+  {
+   "episode_id": 87314343,
+   "submission_id": 54883092,
+   "our_index": 1,
+   "our_rating": 549.9926258404748,
+   "opp_rating": 520.203144840458,
+   "opp_team_id": 16451588,
+   "end_time": "2026-07-21T18:02:48.635518900Z",
+   "replay_file": "data/replays/87314343.json"
+  },
+  {
+   "episode_id": 87316526,
+   "submission_id": 54883092,
+   "our_index": 1,
+   "our_rating": 544.1208779905974,
+   "opp_rating": 519.2524231096894,
+   "opp_team_id": 16392782,
+   "end_time": "2026-07-21T18:19:17.094992700Z",
+   "replay_file": "data/replays/87316526.json"
+  },
+  {
+   "episode_id": 86904478,
+   "submission_id": 54811671,
+   "our_index": 0,
+   "our_rating": 540.466115832716,
+   "opp_rating": 518.2470653821268,
+   "opp_team_id": 16510044,
+   "end_time": "2026-07-19T14:51:27.848999500Z",
+   "replay_file": "data/replays/86904478.json"
+  },
+  {
+   "episode_id": 87325043,
+   "submission_id": 54883092,
+   "our_index": 1,
+   "our_rating": 556.3653282047217,
+   "opp_rating": 493.9787123754743,
+   "opp_team_id": 16382989,
+   "end_time": "2026-07-21T19:22:12.788628300Z",
+   "replay_file": "data/replays/87325043.json"
+  },
+  {
+   "episode_id": 87486262,
+   "submission_id": 54904755,
+   "our_index": 0,
+   "our_rating": 556.859599239757,
+   "opp_rating": 484.5454135822163,
+   "opp_team_id": 16375281,
+   "end_time": "2026-07-22T15:29:26.519242500Z",
+   "replay_file": "data/replays/87486262.json"
+  },
+  {
+   "episode_id": 87352496,
+   "submission_id": 54883092,
+   "our_index": 0,
+   "our_rating": 560.3316434503156,
+   "opp_rating": 482.1481522191996,
+   "opp_team_id": 16569290,
+   "end_time": "2026-07-21T22:44:02.580661700Z",
+   "replay_file": "data/replays/87352496.json"
+  },
+  {
+   "episode_id": 87113559,
+   "submission_id": 54811671,
+   "our_index": 1,
+   "our_rating": 556.9144772634183,
+   "opp_rating": 469.1204687185638,
+   "opp_team_id": 16449903,
+   "end_time": "2026-07-20T16:43:34.522426200Z",
+   "replay_file": "data/replays/87113559.json"
+  },
+  {
+   "episode_id": 87306276,
+   "submission_id": 54882738,
+   "our_index": 0,
+   "our_rating": 600,
+   "opp_rating": 466.09625138285793,
+   "opp_team_id": 16388521,
+   "end_time": "2026-07-21T16:55:48.949612600Z",
+   "replay_file": "data/replays/87306276.json"
+  },
+  {
+   "episode_id": 87478661,
+   "submission_id": 54904755,
+   "our_index": 0,
+   "our_rating": 498.7171981433854,
+   "opp_rating": 464.138388477338,
+   "opp_team_id": 16465844,
+   "end_time": "2026-07-22T14:33:30.377246400Z",
+   "replay_file": "data/replays/87478661.json"
+  },
+  {
+   "episode_id": 87306839,
+   "submission_id": 54882738,
+   "our_index": 1,
+   "our_rating": 448.7842091715782,
+   "opp_rating": 436.7692927218462,
+   "opp_team_id": 16490963,
+   "end_time": "2026-07-21T16:59:52.988298300Z",
+   "replay_file": "data/replays/87306839.json"
+  },
+  {
+   "episode_id": 87313355,
+   "submission_id": 54882738,
+   "our_index": 0,
+   "our_rating": 335.52906847663127,
+   "opp_rating": 431.0770174328152,
+   "opp_team_id": 16392432,
+   "end_time": "2026-07-21T17:50:48.772239200Z",
+   "replay_file": "data/replays/87313355.json"
+  },
+  {
+   "episode_id": 87307388,
+   "submission_id": 54882738,
+   "our_index": 0,
+   "our_rating": 349.13189582091206,
+   "opp_rating": 430.28660977013493,
+   "opp_team_id": 16393227,
+   "end_time": "2026-07-21T17:04:15.164880200Z",
+   "replay_file": "data/replays/87307388.json"
+  },
+  {
+   "episode_id": 87313916,
+   "submission_id": 54882738,
+   "our_index": 0,
+   "our_rating": 318.5003905370012,
+   "opp_rating": 413.74881540266114,
+   "opp_team_id": 16376695,
+   "end_time": "2026-07-21T17:58:38.725672300Z",
+   "replay_file": "data/replays/87313916.json"
+  },
+  {
+   "episode_id": 87482974,
+   "submission_id": 54904755,
+   "our_index": 0,
+   "our_rating": 562.727744632135,
+   "opp_rating": 399.14044909246496,
+   "opp_team_id": 16454285,
+   "end_time": "2026-07-22T15:05:26.850273200Z",
+   "replay_file": "data/replays/87482974.json"
+  },
+  {
+   "episode_id": 87316159,
+   "submission_id": 54882738,
+   "our_index": 0,
+   "our_rating": 284.76958739325903,
+   "opp_rating": 358.9462351995115,
+   "opp_team_id": 16543537,
+   "end_time": "2026-07-21T18:14:23.030543900Z",
+   "replay_file": "data/replays/87316159.json"
+  },
+  {
+   "episode_id": 87307943,
+   "submission_id": 54882738,
+   "our_index": 0,
+   "our_rating": 283.74992632298756,
+   "opp_rating": 344.57126877210334,
+   "opp_team_id": 16379050,
+   "end_time": "2026-07-21T17:08:07.696223300Z",
+   "replay_file": "data/replays/87307943.json"
+  },
+  {
+   "episode_id": 87361555,
+   "submission_id": 54882738,
+   "our_index": 1,
+   "our_rating": 306.23389712584833,
+   "opp_rating": 333.5123890253589,
+   "opp_team_id": 16371582,
+   "end_time": "2026-07-21T23:51:43.920124700Z",
+   "replay_file": "data/replays/87361555.json"
+  },
+  {
+   "episode_id": 87315031,
+   "submission_id": 54882738,
+   "our_index": 1,
+   "our_rating": 281.5598457335545,
+   "opp_rating": 332.6892245796239,
+   "opp_team_id": 16429363,
+   "end_time": "2026-07-21T18:06:52.116824300Z",
+   "replay_file": "data/replays/87315031.json"
+  },
+  {
+   "episode_id": 87311171,
+   "submission_id": 54882738,
+   "our_index": 1,
+   "our_rating": 276.7132926096017,
+   "opp_rating": 329.2113365693265,
+   "opp_team_id": 16382632,
+   "end_time": "2026-07-21T17:32:12.464214500Z",
+   "replay_file": "data/replays/87311171.json"
+  },
+  {
+   "episode_id": 87314468,
+   "submission_id": 54882738,
+   "our_index": 0,
+   "our_rating": 302.62260525003626,
+   "opp_rating": 307.4634699099577,
+   "opp_team_id": 16465286,
+   "end_time": "2026-07-21T18:02:15.576545900Z",
+   "replay_file": "data/replays/87314468.json"
+  },
+  {
+   "episode_id": 87342961,
+   "submission_id": 54882738,
+   "our_index": 1,
+   "our_rating": 321.33095484297974,
+   "opp_rating": 299.51204461916126,
+   "opp_team_id": 16376568,
+   "end_time": "2026-07-21T21:40:03.283587100Z",
+   "replay_file": "data/replays/87342961.json"
+  },
+  {
+   "episode_id": 87362039,
+   "submission_id": 54882738,
+   "our_index": 1,
+   "our_rating": 294.2883572360166,
+   "opp_rating": 283.88335231112376,
+   "opp_team_id": 16374911,
+   "end_time": "2026-07-21T23:55:53.717229900Z",
+   "replay_file": "data/replays/87362039.json"
+  },
+  {
+   "episode_id": 87309015,
+   "submission_id": 54882738,
+   "our_index": 0,
+   "our_rating": 281.1442237288517,
+   "opp_rating": 245.53251809681686,
+   "opp_team_id": 16487856,
+   "end_time": "2026-07-21T17:16:03.552410400Z",
+   "replay_file": "data/replays/87309015.json"
+  }
+ ]
+}

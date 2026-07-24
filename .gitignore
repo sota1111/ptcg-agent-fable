@@ -15,3 +15,5 @@ __pycache__/
 /eval/results/
 /train/data/
 /train/weights/
+# raw step-level replays (~2MB each, re-fetchable via analysis/kaggle_replays.py)
+/analysis/data/replays/
